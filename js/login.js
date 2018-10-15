@@ -66,7 +66,7 @@ submit.onclick = function(){
   // The user is not able to leave the email or password fields blank
   if(inputEmail.value.length == 0 || inputPassword.value.length == 0){
     // We set the resultspan with a new text and return false to get out of this function
-    resultSpan.innerText = "You need to enter an email and password in order to use our system";
+    resultSpan.innerText = "You need to enter an email and password in order to use the system";
     return false;
   }
   // We loop through all our users and return true if we find a match
@@ -97,11 +97,8 @@ submit.onclick = function(){
       // Update the lastAccess of the user-object
       // TODO: is this function necessary?
       user.setLastAccess();
-
-      // We set the resultspan with a new text and return true to get out of this function. (?)
-      resultSpan.innerText = "Hi " + user.firstname + " " + user.lastname + ", you've successfully entered the system.";
-      
-      // Relocates to the success-page (you are logged in)
+  
+      // Relocates to the front-page (you are logged in)
       window.location = "../login/frontpage.html"; 
       
       // Return true to jump out of the function, since we now have all we need.
