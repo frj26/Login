@@ -7,48 +7,50 @@
     <link rel="stylesheet" href="css/Newfrontpagestyle.css">
     <link rel ="downdown" href="js/dropdownmenu.js">
 </head>
-    
-
 <body>
-    <h1>SHOES</h1>
+    <header>
+        <h1>SHOES</h1>
 
-    <div class="navbar">
-        <a href="#home">Home</a>
-    <div class="dropdown">
+
+    <!--The navigation bar with home-button,login/signup, men's category and women's category-->
+        <div class="navbar">
+            <a class="active" href="#home">Home</a> <!--The active element makes it easy for us to style the specific element-->
+            <div class="dropdown">
+                    <button class="dropbtn">Log in / Sign up</button>
+                    <div class="dropdown-content">
+                        <a href="login.html">Log in</a>
+                        <a href="sign-in-forms.html">Sign Up</a>
+                    </div>
+                </div>
+        <div class="dropdown">
             <button class="dropbtn">Men</button>
             <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
+                    <a href="#">Boots</a>
+                    <a href="#">Loafers</a>
+                    <a href="#">Sneakers</a>
+                </div>
             </div>
-          </div>
-    <div class="dropdown">
-          <button class="dropbtn">Women</button>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-            <a href="#">Link 4</a>
-                
-    </div> 
-
-
-        <!-- The form for the search button-->
-        <form class="example" action="action_page.php">
-            <input type="text" placeholder="Search.." name="search">
-        </form>
-    </div> 
+        <div class="dropdown">
+            <button class="dropbtn">Women</button>
+            <div class="dropdown-content">
+                    <a href="#">Boots</a>
+                    <a href="#">Heels</a>
+                    <a href="#">Loafers</a>
+                    <a href="#">Sneakers</a>    
+                </div>  
+            </div>    
     
-     <!-- Load icon library - what is this? -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        </header>    
 
+    <br />
+    <br />
     
-   
-     
-   
-    </form> 
-
     <img src="Pictures/sneakerheads.png" alt="Shoes"/>
+</p>
+<footer>
+    hi
+</footer>
 
 </body>
+
 </html>
