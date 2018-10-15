@@ -7,14 +7,8 @@ class User {
     this.lastname = lastname;
     this.email = email;
     this.password = this.hashPassword(password);
-    this.lastAccess = null; 
 }
 
-  // Function that allows us to set lastAccess to current time in unix time (Date.now())
-  // TODO: delete this function.
-  setLastAccess(){
-    this.lastAccess = Date.now();
-}
 
 // Simple function to hash passwords in order for us not to store then in clear text
 hashPassword(rawPassword){
@@ -58,9 +52,9 @@ var resultSpan = document.getElementById('loginResult');
 
 // Bind the onClick-function to our own function (not sure what this means)
 submit.onclick = function(){
-  // Bind the two input fields and get the value
-  var inputEmail = document.getElementById('email');
-  var inputPassword = document.getElementById('password');
+// Bind the two input fields and get the value
+var inputEmail = document.getElementById('email');
+var inputPassword = document.getElementById('password');
 
   
   // The user is not able to leave the email or password fields blank
@@ -92,12 +86,7 @@ submit.onclick = function(){
     }
 
     // If username and password matches one from our loop
-    if(user.email == inputEmail.value && user.password == hashedInputPassword) {
-
-      // Update the lastAccess of the user-object
-      // TODO: is this function necessary?
-      user.setLastAccess();
-  
+    if(user.email == inputEmail.value && user.password == hashedInputPassword) {  
       // Relocates to the front-page (you are logged in)
       window.location = "../login/frontpage.html";
 
@@ -131,7 +120,5 @@ submit.onclick = function(){
     return false;
 // Trying to change the page when the user logged in, it should say 'my account' instead of 'login'
   }
-function menuEditor(){
-  document.getElementById("loginbutton").innerHTML = "Test";
-}
 };
+
