@@ -1,0 +1,45 @@
+div {
+    margin-bottom: 50px;
+    height: 400px;
+    width: auto;
+    background-color: #49274A;
+  }
+  form {
+    padding: 30px;
+    width: 800px;
+  }
+ 
+  #form {
+    
+    font-family: Tahoma;
+    font-variant: small-caps;
+  }
+  
+  #form h1 {
+    color: white;
+  }
+  
+  #form input {
+    background-color: #49274A;
+    border: 1px #828081 solid;
+    padding: 10px;
+    color: #828081;
+    font-variant: small-caps;
+    margin-bottom: 20px;
+    width: 200px;
+  }
+  
+  #form input:hover, #form input:focus {
+    border: 1px #94618E solid;
+    color: #94618E;
+  }
+  
+  #form button {
+    background-color: #94618E;
+    border: 0px;
+    color: white;
+    font-size: 0.9em;
+    padding: 10px 20px;
+    font-variant: small-caps;
+    width: 225px;
+  }
