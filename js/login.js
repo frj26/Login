@@ -99,7 +99,8 @@ submit.onclick = function(){
       user.setLastAccess();
   
       // Relocates to the front-page (you are logged in)
-      window.location = "../login/frontpage.html"; 
+      window.location = "../login/frontpage.html";
+
       
       // Return true to jump out of the function, since we now have all we need.
       return true;
@@ -128,5 +129,9 @@ submit.onclick = function(){
 
     // Return false, since we do not have anything more to do
     return false;
+// Trying to change the page when the user logged in, it should say 'my account' instead of 'login'
   }
+function menuEditor(){
+  document.getElementById("loginbutton").innerHTML = "Test";
+}
 };

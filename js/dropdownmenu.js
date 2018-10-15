@@ -1,1 +1,0 @@
-<a class="active" href="#home">Home</a>
