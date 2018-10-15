@@ -9,17 +9,19 @@
  <div id="form">
   <form>
     <h1>Sign Up</h1>
-    <input type="text" placeholder="Given name" />
-    <input type="text" placeholder="Family name" />
-    <input type="text" placeholder="Email" id="formemail" /> 
+    <input type="text" id= "givenName" placeholder="Given name" />
+    <input type="text" id= "familyName" placeholder="Family name" />
+    <input type="text" id= "formEmail" placeholder="Email" /> 
     <br />
-    <input type="text" placeholder="Password" />
-    <input type="text" placeholder="Repeat Password" />
-
+    <!--The "pattern" part in here is what makes the "password" require numbers, uppercase, and a length of 8 characters. -->
+    <input type="password" id= "password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" />
+    <input type="password" id= "repeatPassword" placeholder="Repeat Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" />
     <button>Submit</button>
+    <br /> 
+    <p>Password must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters. </p>
   </form>
 </div>
-        
+
   </body>
   <link rel="stylesheet" href="css/signinforms.css">
 </html>
