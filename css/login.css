@@ -19,8 +19,7 @@ body {
     background-color: white;
     border: 1px #828081 solid;
     padding: 15px; /* how high the buttons are */
-    color: #828081; 
-    font-variant: small-caps; 
+    color: #828081;  
     margin-bottom: 15px; /* how much space there are between the buttons */
     width: 250px; /* how long the buttons are */
     font-size: 0.9em; 

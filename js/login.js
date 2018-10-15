@@ -7,10 +7,11 @@ class User {
     this.lastname = lastname;
     this.username = username;
     this.password = this.hashPassword(password);
-    this.lastAccess = null;
+    this.lastAccess = null; 
 }
 
   // Function that allows us to set lastAccess to current time in unix time (Date.now())
+  // TODO: delete this function.
   setLastAccess(){
     this.lastAccess = Date.now();
 }
@@ -42,8 +43,9 @@ var debug = 1;
 var users = [];
 
 // Fill it up with a few users
-users.push(new User("Mie", "Høiby", "mie", "qwerty"));
-users.push(new User("Peter", "Pan", "milkway", "password"));
+users.push(new User("Mie", "Høiby", "mie", "456456"));
+users.push(new User("Marcello", "Javelly", "marcello", "123123"));
+users.push(new User("Frederik", "Rysgaard", "frederik", "123456"));
 
 // Bind the button to a variable for later use
 var submit = document.getElementById('submit');
@@ -54,14 +56,13 @@ var counter = 3;
 // Bind the span for result text for later use
 var resultSpan = document.getElementById('loginResult');
 
-
 // Bind the onClick-function to our own function (not sure what this means)
 submit.onclick = function(){
   // Bind the two input fields and get the value
   var inputUsername = document.getElementById('username');
   var inputPassword = document.getElementById('password');
 
-
+  
   // The user is not able to leave the username or password fields blank
   if(inputUsername.value.length == 0 || inputPassword.value.length == 0){
     // We set the resultspan with a new text and return false to get out of this function
@@ -94,13 +95,15 @@ submit.onclick = function(){
     if(user.username == inputUsername.value && user.password == hashedInputPassword) {
 
       // Update the lastAccess of the user-object
+      // TODO: is this function necessary?
       user.setLastAccess();
 
-      // We set the resultspan with a new text and return true to get out of this function. The date will be in unixtime
-      // TODO: We wan't something better than unixtime for the user!
-      // do we really need the last access function? What does it contribute with?
-      resultSpan.innerText = "Hi " + user.firstname + " " + user.lastname + ", you've successfully entered the system at: "+user.lastAccess;
-
+      // We set the resultspan with a new text and return true to get out of this function.
+      resultSpan.innerText = "Hi " + user.firstname + " " + user.lastname + ", you've successfully entered the system.";
+      
+      // Relocates to the success-page (you are logged in)
+      window.location = "../login/success.html"; 
+      
       // Return true to jump out of the function, since we now have all we need.
       return true;
     }
@@ -130,7 +133,3 @@ submit.onclick = function(){
     return false;
   }
 };
-
-console.log("Button is clicked");
-
-
