@@ -42,10 +42,7 @@ var debug = 1;
 var users = [];
 
 // Fill it up with a few users
-users.push(new User("Marcello", "Javelly", "123", "123123"));
-users.push(new User("Frederik", "Rysgaard", "456@hotmailcom", "456456"));
-users.push(new User("Mie", "Høiby", "789@hotmail.com", "789789"));
-users.push(new User("Henrik", "Thorn", "thorn", "qwerty"));
+users.push(new User("Mie", "Høiby", "mie", "qwerty"));
 users.push(new User("Peter", "Pan", "milkway", "password"));
 
 // Bind the button to a variable for later use
