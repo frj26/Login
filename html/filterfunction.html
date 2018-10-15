@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cocktails</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="flotLeft"></div>
+        <h1>Cocktails</h1>
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+    <table id="myTable">
+      <tr class="header">
+        <th style="width:60%;">Name</th>
+        <th style="width:40%;">Ingridients</th>
+      </tr>
+      <tr>
+        <td>Mojito</td>
+        <td>Sugar, Lime, Rum, Soda</td>
+      </tr>
+      <tr>
+        <td>Bloody Mary</td>
+        <td>Tomato juice</td>
+      </tr>
+      <tr>
+        <td>G&T</td>
+        <td>Tonic, Gin, Lime</td>
+      </tr>
+      <tr>
+        <td>Pina Colada</td>
+        <td>Pineapple, Coconut</td>
+      </tr>
+    </table> 
+
+    <script>
+        function myFunction() {
+          // Declare variables
+          var input, filter, table, tr, td, i; //initializing the variables
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+        
+          // Loop through all table rows, and hide those who don't match the search query
+          for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[1];
+            if (td) {
+              if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+              } else {
+                tr[i].style.display = "none";
+              }
+            }
+          }
+        }
+        </script>
+    
+</body>
+</html>
