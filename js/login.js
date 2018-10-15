@@ -2,13 +2,13 @@
 class User {
 
   // The constructor for our class, which will allow us to create new objects of our class
-  constructor(firstname, lastname, password) {
+  constructor(firstname, lastname, username, password) {
     this.firstname = firstname;
     this.lastname = lastname;
     this.username = username;
     this.password = this.hashPassword(password);
     this.lastAccess = null;
-  }
+}
 
   // Function that allows us to set lastAccess to current time in unix time (Date.now())
   setLastAccess(){
@@ -45,6 +45,8 @@ var users = [];
 users.push(new User("Marcello", "Javelly", "123", "123123"));
 users.push(new User("Frederik", "Rysgaard", "456@hotmailcom", "456456"));
 users.push(new User("Mie", "Høiby", "789@hotmail.com", "789789"));
+users.push(new User("Henrik", "Thorn", "thorn", "qwerty"));
+users.push(new User("Peter", "Pan", "milkway", "password"));
 
 // Bind the button to a variable for later use
 var submit = document.getElementById('submit');
