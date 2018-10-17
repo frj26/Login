@@ -9,13 +9,13 @@
  <div id="form">
   <form>
     <h1>Sign Up</h1>
-    <input type="text" id= "givenName" placeholder="Given name" required value= "" />
-    <input type="text" id= "familyName" placeholder="Family name" required value= "" />
-    <input type="text" id= "email" placeholder="Email" required value= "" /> 
+    <input type="text" id= "givenName" placeholder="Given name" required />
+    <input type="text" id= "familyName" placeholder="Family name" required />
+    <input type="text" id= "email" placeholder="Email" required /> 
     <br />
     <!--The "pattern" part in here is what makes the "password" require numbers, uppercase, and a length of 8 characters. -->
-    <input type="password" id= "password" placeholder="Password" required value= "" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" />
-    <input type="password" id= "repeatPassword" placeholder="Repeat Password" required value= "" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" />
+    <input type="password" id= "password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required/>
+    <input type="password" id= "repeatPassword" placeholder="Repeat Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required />
     <input type="button" value="Login" name="submit" id="submit" onClick= "store()" onClick= "fieldscheck()"/>
     <br /> 
     <p>Password must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters. </p>
