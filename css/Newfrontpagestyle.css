@@ -59,7 +59,6 @@
     z-index: 1;
   }
   
-  
   /* Links inside the dropdown */
   .dropdown-content a {
     float: none;
@@ -107,4 +106,8 @@ form.example::after {
   background-color: black;
   height: 100px;
   color:white;
+  position: absolute !important;
+  bottom: 0%;
+  width: 100%;
+
 }
