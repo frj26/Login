@@ -25,7 +25,7 @@ function store(){
     //All fields filled out check.
     if(inputGivenName && inputFamilyName && inputEmail && inputPassword && inputRepeatPassword){
 
-    var user = {inputGivenName, inputFamilyName, inputEmail, inputPassword, repeatPassword};
+    var user = {'Given Name': inputGivenName, 'Family Name': inputFamilyName, 'Email': inputEmail, 'Password': inputPassword, 'Repeat Password': repeatPassword};
     // JSON has two functions: stringify(Type:Any) AND parse(Type:String)
     // var user = JSON.stringify(newuser); //create new type of user (newuser)
     //NOT inside this function: 
@@ -36,7 +36,7 @@ function store(){
     
     localStorage.setItem('users', usersString);
 
-    document.location.href = "profile.html";
+    document.location.href = "login.html";
     }
     else{
         alert("Please fill out all the fields to register.");
