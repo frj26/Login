@@ -14,9 +14,9 @@
     <input type="email" id= "email" placeholder="Email" required />
     <br />
     <!--The "pattern" part in here is what makes the "password" require numbers, uppercase, and a length of 8 characters. -->
-    <input type="password" id= "password" placeholder="Password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required />
-    <input type="password" id= "repeatPassword" placeholder="Repeat Password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required />
-    <input type="button" value="Login" name="submit" id="submit" onclick="store()"/>
+    <input type="password" id= "password" placeholder="Password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required />
+    <input type="password" id= "repeatPassword" placeholder="Repeat Password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required />
+    <input type="submit" value="Login" name="submit" id="submit" /> <!--onclick="store()"-->
     <br /> 
   </form>
 </div>
