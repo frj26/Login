@@ -36,7 +36,7 @@ function store(){
     
     localStorage.setItem('users', usersString);
 
-    document.location.href = "profile.html";
+    document.location.href = "successfullregistration.html";
     }
     else{
         alert("Please fill out all the fields to register.");
