@@ -50,7 +50,7 @@ var counter = 3;
 // Bind the span for result text for later use
 var resultSpan = document.getElementById('loginResult');
 
-// Bind the onClick-function to our own function (not sure what this means)
+// Bind the onClick-function to our own function. When the user clicks, the function starts
 submit.onclick = function(){
 // Bind the two input fields and get the value
 var inputEmail = document.getElementById('email');
