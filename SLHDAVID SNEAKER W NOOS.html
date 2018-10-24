@@ -9,6 +9,7 @@
     <link rel="front page stylesheet" href="css/Newfrontpagestyle.css">
 </head>
 <body>
+<!-- Calling navigation-bar from generic.js -->
     <div id="navbar"><div class='navbar'></div></div>
 
     <div id="column1">          
@@ -58,8 +59,29 @@
             <p>xxxx</p>
             <p>xxxx</p>
             <p>Article no: 12647</p>
-        </div>
+            <p>Choose size here:</p>
+        </div>  
+
+        <!-- Adding a select-menu for choosing size (how do we make sure this is stored if they go to the shopping cart) -->
+        <select name="Choose size">
+                <option
+                value="Select a size">Select a size</option>
+     
+                <option value="41">41</option>
+                <option value="42">42</option>
+                <option value="43">43</option>
+                <option value="44">44</option>
+                <option value="45">45</option>
+                <option value="46">46</option>
+                <option value="47">47</option>
+              </select>
+              <button type="button">Add to cart</button>
+            
     </div>
+
+ <!-- Creating a HTML select tag allowing customers to choose size -->
+
+    
 
     <script src="js/generic.js"></script>
     <script src="js/productsinformationpage.js"></script>
