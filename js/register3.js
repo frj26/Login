@@ -31,9 +31,9 @@ function store(){
     //NOT inside this function: 
     //Use JSON.parse(*insert your string from locatStorage) and then assign the return value to a user object
     users.push(user);
-    
+    //JSON Stringidy is making all the objecs into a string so it can store it in the local storage.
     var usersString = JSON.stringify(users);
-    
+    //Saving the string into the local storage. "users" is the key, and userString is what is going to be saving.
     localStorage.setItem('users', usersString);
 
     document.location.href = "successfullregistration.html";
