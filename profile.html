@@ -7,27 +7,33 @@
   <body>
         
  <div id="userProfile">
+  <form>
+    <p>Name: </p><p id= "givenName"></p>
+    <p>Last Name: </p><p id= "familyName"></p>
+    <p>Email: </p><p id= "email"></p>
+    <p>Password: </p><p id= "password"></p>
+    <h1>Add more information</h1>
+    Birthdate <input type="text" id= "birthdate" placeholder="DDMMYYYY" />
+    Gender <input type="text" id= "gender" placeholder="Gender" />
+    <br/>
+    Shipping Address <input type="text" id= "streetNumber" placeholder="Street, number, interior" />
+    <input type="text" id= "postalCode" placeholder="Postal Code" />
+    <input type="text" id= "city" placeholder="City" />
+    <input type="text" id= "country" placeholder="Country" />
+    <br/>
+    Phone Number<input type="text" id= "phoneNumber" placeholder="Phone Number" />
+    <br/>
+    <input type="submit" value="Add Information" name="Add Information" id="addInformation" /> <!--onclick="store()"-->
+  </form>
+ <!-- Shipping Address ((Street, number, interior), postal code, city, country), Birth Date, Phone Number, Gender  -->
 
- <p>Name: </p><p id= "givenName"></p>
- <p>Last Name: </p><p id= "familyName"></p>
- <p>Email: </p><p id= "email"></p>
- 
-    <!-- <form>
-    <h1>Profile</h1>
-    <input type="text" id= "givenName" />
-    <br /> 
-    <input type="text" id= "familyName" />
-    <br /> 
-    <input type="email" id= "email" />
-     
-    <br /> 
-  </form> -->
+  
 </div>
 
   </body>
   <link rel="stylesheet" href="css/signinforms.css">
 
-  <script src="js/profilefunctions.js" ></script>
+  <script src="js/profilefunctions2.js" ></script>
 
 
 </html>
