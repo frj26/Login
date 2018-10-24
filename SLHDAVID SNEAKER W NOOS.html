@@ -13,6 +13,7 @@
     <div id="navbar"><div class='navbar'></div></div>
 
     <div id="column1">          
+
         <!-- Slideshow container -->
         <div class="slideshow-container">
             
@@ -64,10 +65,8 @@
 
         <!-- Adding a select-menu for choosing size (how do we make sure this is stored if they go to the shopping cart) -->
         <select name="Choose size">
-                <option
-                value="Select a size">Select a size</option>
-     
-                <option value="41">41</option>
+                <option value="Select a size">Select a size</option>
+                <option value="41" id="41">41</option>
                 <option value="42">42</option>
                 <option value="43">43</option>
                 <option value="44">44</option>
@@ -77,13 +76,11 @@
               </select>
               <button type="button">Add to cart</button>
             
+              <div id="sneaker1"></div>
     </div>
-
- <!-- Creating a HTML select tag allowing customers to choose size -->
-
     
-
     <script src="js/generic.js"></script>
     <script src="js/productsinformationpage.js"></script>
+    <script src="js/shoes.js"></script>
 </body>
 </html>
