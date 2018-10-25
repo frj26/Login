@@ -12,6 +12,14 @@ function store(){
     var inputPassword = document.getElementById('password').value;
     var inputRepeatPassword = document.getElementById('repeatPassword').value;
     var passwordLength = inputPassword.length;
+    var emailFilter = /^([a-zA-Z0-9_.-])+@([a-zA-Z0-9-])+.+([a-zA-Z0-9]{2,4})+$/;
+    // var passwordValidation = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,8}$/
+    
+    if(!emailFilter.test(inputEmail)){
+        alert("Please enter a valid email address.")
+    }
+    else{
+    
     //For the password length check.
     if(passwordLength<8){
         alert("Password must contain at least 8 characters.")
@@ -36,12 +44,13 @@ function store(){
     //Saving the string into the local storage. "users" is the key, and userString is what is going to be saving.
     localStorage.setItem('users', usersString);
 
-    document.location.href = "successfullregistration.html";
+    document.location.href = 'successfullregistration.html';
     }
     else{
         alert("Please fill out all the fields to register.");
         }
+            }
+        }
     }
-  }
 }
   );
