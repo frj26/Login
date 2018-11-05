@@ -41,7 +41,7 @@ function addInformation(){
         var country = document.getElementById("country").value;
         var phoneNumber = document.getElementById("phoneNumber").value;
     
-    if(birthdate && gender && streetNumber && postalCode && city && country && phoneNumber){
+if(birthdate && gender && streetNumber && postalCode && city && country && phoneNumber){
 
     var user = {givenName, familyName, email, password, birthdate, gender, streetNumber, postalCode, city, country, phoneNumber};
 
@@ -50,11 +50,10 @@ function addInformation(){
     var usersString = JSON.stringify(updatedProfileUsers);
     //Saving the string into the local storage. "users" is the key, and userString is what is going to be saving.
     localStorage.setItem('updatedProfileUsers', usersString);
-    //No me esta enviando a updatedprofile.html/cambie las listas ahora hace dos.
-    // Eexplorar la idea de poner un contador para agregar mas usuarios.
+
     document.location.href = 'updatedprofile.html';
         }
-        else{alert("Please fill in all the information.")
+else{ alert("Please fill in all the information.")
         }
     }
 )
