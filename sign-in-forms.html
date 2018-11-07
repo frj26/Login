@@ -11,12 +11,14 @@
     <h1>Sign Up</h1>
     <input type="text" id= "givenName" placeholder="Given name" required />
     <input type="text" id= "familyName" placeholder="Family name" required />
+    <input type="text" id= "birthdate" placeholder="Birthdate" />
+    <input type="text" id= "gender" placeholder="Gender" />
     <input type="email" id= "email" placeholder="Email" required />
     <br />
     <!--The "pattern" part in here is what makes the "password" require numbers, uppercase, and a length of 8 characters. -->
-    <input type="password" id= "password" placeholder="Password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required />
-    <input type="password" id= "repeatPassword" placeholder="Repeat Password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required />
-    <input type="submit" value="Login" name="submit" id="submit" /> <!--onclick="store()"-->
+    <input type="password" id= "password" placeholder="Password" />
+    <input type="password" id= "repeatPassword" placeholder="Repeat Password" />
+    <input type="submit" value="Login" name="submit" id="submit"/>
     <br /> 
   </form>
 </div>

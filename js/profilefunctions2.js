@@ -8,6 +8,8 @@ window.onload = function loadUser() {
 
         var givenName = userProfile[0].inputGivenName;
         var familyName = userProfile[0].inputFamilyName;
+        var birthdate = userProfile[0].inputBirthdate
+        var gender = userProfile[0].inputGender
         var email = userProfile[0].inputEmail;
         var password = userProfile[0].inputPassword;
 
@@ -17,6 +19,8 @@ window.onload = function loadUser() {
 
     document.getElementById("givenName").innerHTML = givenName;
     document.getElementById("familyName").innerHTML = familyName;
+    document.getElementById("birthdate").innerHTML = birthdate;
+    document.getElementById("gender").innerHTML = gender;
     document.getElementById("email").innerHTML = email;
     document.getElementById("password").innerHTML = password;
 
@@ -24,7 +28,8 @@ window.onload = function loadUser() {
 
 addInformation.addEventListener("click",
 
-function addInformation(){
+function addInformation(e){
+    e.preventDefault()
     var inputUserProfile = localStorage.getItem("users");
 
     var userProfile = JSON.parse(inputUserProfile);
