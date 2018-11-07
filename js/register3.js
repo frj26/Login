@@ -10,7 +10,7 @@ function storeUser(event){
     event.preventDefault() //We do this so all the information is not just added to the url.
     var inputGivenName = document.getElementById('givenName').value;
     var inputFamilyName = document.getElementById('familyName').value;
-    var inputBirthdate = document.getElementById('birthdate').value;
+    var inputBirthdate = document.getElementById('dayBirthdate').value + '/' + document.getElementById('monthBirthdate').value + '/' + document.getElementById('yearBirthdate').value;
     var inputGender = document.getElementById('gender').value;
     var inputEmail = document.getElementById('email').value;
     var inputPassword = document.getElementById('password').value;

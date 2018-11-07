@@ -16,3 +16,16 @@ var footer =  document.getElementById("footer");
 if(footer !== null){
   footer.innerHTML = "<p class='footer-p'>This is our footer</p>";
 }
+
+window.onload = function welcomeUser() {
+  var inputUserProfile = localStorage.getItem("users");
+
+  var userProfile = JSON.parse(inputUserProfile);
+
+  if(userProfile[0].inputGivenName === null) { //it is not reading the null, I need to find which one it reads.
+    document.getElementById("welcomeUser").innerHTML = 'Register here'
+  }
+  else{
+  document.getElementById("welcomeUser").innerHTML = 'Welcome ' + userProfile[0].inputGivenName;
+  }
+}
