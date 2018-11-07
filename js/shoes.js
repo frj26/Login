@@ -9,6 +9,7 @@ constructor(productname, brandname, price, size) {
     this.price = price;
     this.size = "";
 }
+}
 
 // Initialize an empty array
 var shoes = []; {
