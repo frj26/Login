@@ -1,49 +1,83 @@
+body {
+  background-color: #49274A;
+  font-family: Tahoma;
+  color: white;
+}
+
+label {
+  color: white;
+  width: auto;
+}
+
 div {
-    margin-bottom: 50px;
-    height: 400px;
+    margin-bottom: 10px; /*the distance between the fields*/
     width: auto;
-    background-color: #49274A;
   }
+
   form {
-    padding: 30px;
-    width: 800px;
+    padding: 30px; /*makes all the fields and text within the form be placed a little to right*/
+    width: 800px; /*sets the form's width which is used in order to have three fields in the same line*/
   }
- 
-  #form {
-    
-    font-family: Tahoma;
-    font-variant: small-caps;
-  }
-  
+
   #form h1 {
-    color: white;
+    color: white; 
   }
   
   #form input {
-    background-color: #49274A;
-    border: 1px #828081 solid;
+    background-color: #49274A; /*the background color of the fields within the form */
+    border: 1.5px white solid;
     padding: 10px;
-    color: #828081;
-    font-variant: small-caps;
+    color: white;
     margin-bottom: 20px;
     width: 200px;
   }
+
+  #form input[type=radio] {
+    width: auto; /*style the radio buttons for gender to be located next to each other*/
+  }
   
   #form input:hover, #form input:focus {
-    border: 1px #94618E solid;
-    color: #94618E;
+    border: 1.5px #94618E solid; /*this changes the form's field to a new border color when the mouse is hovered over the field*/
   }
   
-  #form button {
-    background-color: #94618E;
-    border: 0px;
+  #form input[type=submit] {
+    background-color: #94618E; /*the submit button is a new  clor*/
+    border: 1.5px #94618E solid; 
+    color: white; 
+    width: 225px; /*make the width as long as the other fields*/
+  }
+  
+
+::placeholder{
+    color: white; /*the placeholder text within the fields are white*/
+  }
+
+a:link {
     color: white;
-    font-size: 0.9em;
-    padding: 10px 20px;
-    font-variant: small-caps;
-    width: 225px;
-  }
-  
-p { 
-  color: #828081;
+    text-decoration-style: dashed; /* the links have dashed underlines */
+}
+
+a:visited {
+  color: white; /*make sure the links font color stay white even though you have visited the links*/
+} 
+
+/* the below four rules for the IDs postalcode - country is for the profile.html file.*/
+#postalCode {
+  background-color: #49274A;
+  color: white; 
+} 
+
+#streetNumber {
+  background-color: #49274A;
+  color: white; 
+}
+
+#city {
+  background-color: #49274A;
+  color: white; 
+}
+
+#country {
+  background-color: #49274A;
+  color: white; 
 }
