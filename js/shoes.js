@@ -9,11 +9,12 @@ constructor(productname, brandname, price, size) {
     this.price = price;
     this.size = "";
 }
+}
 
 // Initialize an empty array
 var shoes = []; {
 
-// Fill it up with a few users
+// Fill it up with a few shoes
 shoes.push(new Shoe("SLHDAVID SNEAKER W NOOS", "by Selected Homme", "200$", ""), id='sneaker1');
 shoes.push(new Shoe("NORMANTON BOOTS", "by Polo Ralph Lauren", "200$", ""). id='boot1');
 shoes.push(new Shoe("MARIO LOAFERS IN BROWN", "by Vagabond", "200$", ""), id='loafer1');

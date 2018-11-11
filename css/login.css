@@ -3,7 +3,7 @@ body {
     font-family: Tahoma;
     color:  #49274A;
     border:  #49274A double 3px;
-    width: 50%; /* the size of the boz*/
+    width: 50%; /* the size of the box*/
     box-align: center;
     padding: 20px; /* the space between the box's lines and the text inside*/
     text-align: center;
@@ -34,3 +34,7 @@ body {
       color: #49274A;
       text-decoration-style: dashed; /* the links have dashed underlines */
   }
+
+  a:visited {
+    color: #49274A;; /*makes sure the links font color stay white even though you have visited the links*/
+  } 

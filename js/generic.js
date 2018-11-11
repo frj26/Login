@@ -12,4 +12,24 @@ if(navbar !== null) {
 // Footer that is used for various pages - easier to call this than make a new one.
 // If the footer is undefined - this footer will be called (in case we use it)?
 // The IF-statement is done in order to failure handle. If we don't do it there will be a TypeError:
+<<<<<<< HEAD
 
+=======
+var footer =  document.getElementById("footer");
+if(footer !== null){
+  footer.innerHTML = "<p class='footer-p'>This is our footer</p>";
+}
+
+window.onload = function welcomeUser() {
+  var inputUserProfile = localStorage.getItem("users");
+
+  var userProfile = JSON.parse(inputUserProfile);
+
+  if(userProfile[0].inputGivenName === null) { //it is not reading the null, I need to find which one it reads.
+    document.getElementById("welcomeUser").innerHTML = 'Register here'
+  }
+  else{
+  document.getElementById("welcomeUser").innerHTML = 'Welcome ' + userProfile[0].inputGivenName;
+  }
+}
+>>>>>>> 8077df41fd834c229238307aaa088729f2550574
