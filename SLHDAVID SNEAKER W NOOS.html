@@ -7,6 +7,9 @@
     <title>SLHDAVID SNEAKER W NOOS by Selected Homme</title>
     <link rel="stylesheet" href="css/productsinformationpage.css">
     <link rel="front page stylesheet" href="css/Newfrontpagestyle.css">
+
+    
+    <script src="js/shoes.js"></script>
 </head>
 <body>
 <!-- Calling navigation-bar from generic.js -->
@@ -48,26 +51,12 @@
 
  
     <div id="column2">
-        <h1>SLHDAVID SNEAKER W NOOS</h1>
-
-        <h2>by Selected Homme</h2>
-
-        <h3>$200</h3>
-
-        <h4>Product description</h4>
-
-        <div> 
-            <p>xxxx</p>
-            <p>xxxx</p>
-            <p>Article no: 12647</p>
-            <p>Choose size here:</p>
-        </div>  
+        <div id="body"></div>
         
-        
-        <script> var myElement = document.getElementById("sneakers1");
+        <script> document.getElementById("body").innerHTML = window.shoes.sneaker1.createHTML();
         </script>
 
-        <!-- Adding a select-menu for choosing size (how do we make sure this is stored if they go to the shopping cart) -->
+        <!-- Adding a select-menu for choosing size (IMPORTANT: how do we make sure this is stored if they go to the shopping cart) -->
         <select name="Choose size">
                 <option value="Select a size">Select a size</option>
                 <option value="EUR41" id="41">EUR 41</option>
@@ -82,9 +71,8 @@
             
               <div id="sneaker1"></div>
     </div>
-    
-    <script src="js/generic.js"></script>
     <script src="js/productsinformationpage.js"></script>
-    <script src="js/shoes.js"></script>
+    <script src="js/generic.js"></script>
+
 </body>
 </html>
