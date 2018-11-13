@@ -7,13 +7,21 @@
     <title>SLHDAVID SNEAKER W NOOS by Selected Homme</title>
     <link rel="stylesheet" href="css/productsinformationpage.css">
     <link rel="front page stylesheet" href="css/Newfrontpagestyle.css">
-
-    
     <script src="js/shoes.js"></script>
 </head>
+
+
 <body>
-<!-- Calling navigation-bar from generic.js -->
-    <div id="navbar"><div class='navbar'></div></div>
+
+    <header>
+        <!-- Calling the title of our webshop from generic.js -->
+        <div id="webshopName"><div class='webshopName'></div></div>
+
+        <!-- Calling navigation-bar from generic.js -->
+        <div id="navbar"><div class='navbar'></div></div>
+    </header>
+
+    <br>
 
     <div id="column1">          
 
@@ -41,7 +49,7 @@
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
     
-    <!-- The dots/circles -->
+        <!-- The dots/circles -->
         <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
@@ -58,19 +66,21 @@
 
         <!-- Adding a select-menu for choosing size (IMPORTANT: how do we make sure this is stored if they go to the shopping cart) -->
         <select name="Choose size">
-                <option value="Select a size">Select a size</option>
-                <option value="EUR41" id="41">EUR 41</option>
-                <option value="EUR42">EUR 42</option>
-                <option value="EUR43">EUR 43</option>
-                <option value="EUR44">EUR 44</option>
-                <option value="EUR45">EUR 45</option>
-                <option value="EUR46">EUR 46</option>
-                <option value="EUR47">EUR 47</option>
-              </select>
-              <button type="button">Add to cart</button>
+            <option value="Select a size">Select a size</option>
+            <option value="EUR41" id="41">EUR 41</option>
+            <option value="EUR42">EUR 42</option>
+            <option value="EUR43">EUR 43</option>
+            <option value="EUR44">EUR 44</option>
+            <option value="EUR45">EUR 45</option>
+            <option value="EUR46">EUR 46</option>
+            <option value="EUR47">EUR 47</option>
+        </select>
+        
+        <button type="button">Add to cart</button>
             
-              <div id="sneaker1"></div>
+        <div id="sneaker1"></div>
     </div>
+    
     <script src="js/productsinformationpage.js"></script>
     <script src="js/generic.js"></script>
 
