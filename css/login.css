@@ -8,6 +8,7 @@ body {
     padding: 20px; /* the space between the box's lines and the text inside*/
     text-align: center;
     margin: auto; /* align the box to be centered*/
+    margin-top: 30px;
   }
   
   h1 {

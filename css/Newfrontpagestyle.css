@@ -100,14 +100,3 @@ form.example::after {
         border: 1px solid #ccc;
     }
 } 
-
-/* CSS FOR THE GENERIC FOOTER */
-.footer-p {
-  background-color: black;
-  height: 100px;
-  color:white;
-  position: absolute !important;
-  bottom: 0%;
-  width: 100%;
-
-}
