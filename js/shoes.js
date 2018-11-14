@@ -24,7 +24,7 @@ class Shoe {
 
         
     }
-}
+    }
 
 // Createing the object of the shoes. Windoes at it needs to be global:
 window.shoes = {
