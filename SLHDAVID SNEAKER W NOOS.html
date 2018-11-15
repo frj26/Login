@@ -61,26 +61,37 @@
     <div id="column2">
         <div id="body"></div>
         
-        <script> document.getElementById("body").innerHTML = window.shoes.sneaker1.createHTML();
+        <script> 
+            document.getElementById("body").innerHTML = window.shoes.sneaker1.createHTML();
         </script>
 
         <!-- Adding a select-menu for choosing size (IMPORTANT: how do we make sure this is stored if they go to the shopping cart) -->
-        <select name="Choose size">
+        <select name="Choose size" id="sizeSelected">
             <option value="Select a size">Select a size</option>
-            <option value="EUR41" id="41">EUR 41</option>
-            <option value="EUR42">EUR 42</option>
-            <option value="EUR43">EUR 43</option>
-            <option value="EUR44">EUR 44</option>
-            <option value="EUR45">EUR 45</option>
-            <option value="EUR46">EUR 46</option>
-            <option value="EUR47">EUR 47</option>
+            <option value="EUR 41">EUR 41</option>
+            <option value="EUR 42">EUR 42</option>
+            <option value="EUR 43">EUR 43</option>
+            <option value="EUR 44">EUR 44</option>
+            <option value="EUR 45">EUR 45</option>
+            <option value="EUR 46">EUR 46</option>
+            <option value="EUR 47">EUR 47</option>
         </select>
         
-        <button type="button">Add to cart</button>
+        <input type="button" onclick="getValue()" value="Add to shopping cart">
+        <!--<button type="button">Add to cart</button> -->
             
         <div id="sneaker1"></div>
+
+        <p id="demo"></p>
     </div>
-    
+
+    <script>
+        function getValue() {
+            document.getElementById("demo").innerHTML =
+            document.getElementById("sizeSelected").value;
+        }
+    </script>
+
     <script src="js/productsinformationpage.js"></script>
     <script src="js/generic.js"></script>
 
