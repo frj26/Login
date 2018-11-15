@@ -21,26 +21,27 @@
         </div>
 
         <div>
-            <!--We have created a text that will appear if the login is incorrect -->
+            <!--We have created a text that will appear if the login is incorrect. This can be three different texts and is shown in login.js-->
             <span id="loginResult"></span>
         </div>
         
         
         <div>
-            <!-- Creating Hyperlink for reset password-->
-            <a href="resetpassword.html">Forgot password?</a>
-            <br>
-            <br>
             <!-- Creating Hyperlink for 'Registration Page': -->
             <a href="sign-in-forms.html">Register here!</a> 
+
+            <!-- For resetting password, we created a pop-up box where users can fill in their mail to get a new password.-->
+            <!--However, the function is limited, so the users will not receive a mail-->
+            <p onclick="resetPassword()">Forgot password?</p>
+            <p id="passwordReset"></p>
+            
         </div>
 
-        <script src="js/generic.js"></script>
         <!-- Connecting to the CSS file: -->
         <link rel="stylesheet" href="css/login.css">
         <!-- Connecting to the JavaScript file: -->
         <script src="js/login.js"></script>
-        
+        <script src="js/generic.js"></script>
 
     </body>
 </html>

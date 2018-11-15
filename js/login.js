@@ -122,3 +122,14 @@ var inputPassword = document.getElementById('password');
   }
 };
 
+// This function is for resetting the password
+function resetPassword() {
+    var txt;
+    var email = prompt("If you want a new password sent to your email, please enter your email below:"); //this text appears in the pop-up box
+    if (email == null || email == "") {
+        txt = "No mail was sent"; //if the users doesn't fill in text or closes the pop-up box, a text with 'no mail was sent' will appear
+    } else {
+        txt = "An email was sent to " + email; //if the user fill in the email, this text will appear + the email the user wrote
+    }
+    document.getElementById("passwordReset").innerHTML = txt;
+}

@@ -36,6 +36,11 @@ body {
       text-decoration-style: dashed; /* the links have dashed underlines */
   }
 
+  p {
+    color: white;
+    text-decoration: dashed underline; /* the links have dashed underlines */
+  }
+
   a:visited {
     color: white; /*makes sure the links font color stay white even though you have visited the links*/
   } 
