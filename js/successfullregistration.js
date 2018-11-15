@@ -6,6 +6,4 @@ window.onload = function loadUser() {
     var userProfile = JSON.parse(inputUserProfile);
 
     document.getElementById("givenName").innerHTML = userProfile[0].inputGivenName;
-
-
 }

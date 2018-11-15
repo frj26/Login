@@ -2,7 +2,6 @@
 class Shoe {
 
 // The constructor for our class, which will allow us to create new objects of our class
-
     constructor(productname, brandname, price, size) {
         this.productname = productname;
         this.brandname = brandname;
@@ -10,7 +9,7 @@ class Shoe {
         this.size = "";
     }
 
-// Creating the HTML which can be called in the Javascript (COMMENT):
+// Creating the HTML which can be called in the Javascript
     createHTML() {
         return "<h1>" + this.productname + "</h1>" + 
 
