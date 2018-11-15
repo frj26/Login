@@ -1,6 +1,6 @@
 // Navigation bar used for a lot of pages - therefore we prefer to call it rather than using the same code in various pages.
 // The IF-statement is done in order to failure handle. If we don't do it there will be a TypeError:
-// It is a long line since it needs to be a string (as far as we know).
+// It is a long line since it needs to be a string. Could've also have made it into more lines by using (+).
 
 var navbar = document.getElementById("navbar");
 if(navbar !== null) {
@@ -9,6 +9,6 @@ if(navbar !== null) {
 
 
 
-// Footer that is used for various pages - easier to call this than make a new one.
+// (DELETE?)Footer that is used for various pages - easier to call this than make a new one.
 // If the footer is undefined - this footer will be called (in case we use it)?
 // The IF-statement is done in order to failure handle. If we don't do it there will be a TypeError:

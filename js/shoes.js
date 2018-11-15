@@ -10,7 +10,7 @@ class Shoe {
         this.size = "";
     }
 
-// Creating the HTML which can be called in the Javascript:
+// Creating the HTML which can be called in the Javascript (COMMENT):
     createHTML() {
         return "<h1>" + this.productname + "</h1>" + 
 
@@ -26,7 +26,7 @@ class Shoe {
     }
 }
 
-// Createing the object of the shoes. Windoes at it needs to be global:
+// Creating the object of the shoes specific shoes. Chose 'Windows' at it needs to be global, so it can be called with the html files of specific shoes:
 window.shoes = {
     sneaker1: new Shoe("SLHDAVID SNEAKER W NOOS", "by Selected Homme", "200$", ""),
     boots1: new Shoe("NORMANTON BOOTS", "by Polo Ralph Lauren", "200$", ""),
