@@ -23,7 +23,7 @@ div {
     color: white; 
   }
   
-  #form input {
+  #form input{
     background-color: #49274A; /*the background color of the fields within the form */
     border: 1.5px white solid;
     padding: 10px;
@@ -41,7 +41,7 @@ div {
   }
   
   #form input[type=submit] {
-    background-color: #94618E; /*the submit button is a new  clor*/
+    background-color: #94618E; /*the submit button is a new  color*/
     border: 1.5px #94618E solid; 
     color: white; 
     width: 225px; /*make the width as long as the other fields*/
@@ -61,7 +61,7 @@ a:visited {
   color: white; /*make sure the links font color stay white even though you have visited the links*/
 } 
 
-/* the below four rules for the IDs postalcode - country is for the profile.html file.*/
+/* The below four rules for the IDs postalcode - country is for the profile.html file.*/
 #postalCode {
   background-color: #49274A;
   color: white; 
@@ -80,4 +80,20 @@ a:visited {
 #country {
   background-color: #49274A;
   color: white; 
+}
+
+/*The following two rules are for the button in the creditcardadded.html file*/
+#addCreditCard {
+  background-color: #94618E;
+  color: white;
+  border: 1.5px #94618E solid; 
+  padding: 10px 24px;
+  font-size: 16px;
+}
+
+#creditcardAdded {
+  font-size: 16px;
+  padding: 30px;
+  color: white;
+  font-family: Tahoma;
 }

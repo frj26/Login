@@ -1,8 +1,8 @@
 body {
-    background-color: white;
+    color: white;
     font-family: Tahoma;
-    color:  #49274A;
-    border:  #49274A double 3px;
+    background-color:  #49274A;
+    border: white double 3px;
     width: 50%; /* the size of the box*/
     box-align: center;
     padding: 20px; /* the space between the box's lines and the text inside*/
@@ -12,15 +12,15 @@ body {
   }
   
   h1 {
-    color:  #49274A;
+    color: white; /* #49274A; */
     font-variant: small-caps;
   }
   
   body input {
-    background-color: white;
-    border: 1px #828081 solid;
+    background-color:#49274A; /*white;*/
+    border: 1px white solid;
     padding: 15px; /* how high the buttons are */
-    color: #828081;  
+    color: white; 
     margin-bottom: 15px; /* how much space there are between the buttons */
     width: 250px; /* how long the buttons are */
     font-size: 0.9em; 
@@ -32,10 +32,22 @@ body {
   }
 
   a:link {
-      color: #49274A;
+      color: white;
       text-decoration-style: dashed; /* the links have dashed underlines */
   }
 
   a:visited {
-    color: #49274A;; /*makes sure the links font color stay white even though you have visited the links*/
+    color: white; /*makes sure the links font color stay white even though you have visited the links*/
   } 
+
+  ::placeholder{
+    color: white; /*the placeholder text within the fields are white*/
+  }
+
+  #submit {
+    background-color: #94618E;
+    color: white;
+    border: 1.5px #94618E solid; 
+    padding: 10px 24px;
+    font-size: 16px;
+  }

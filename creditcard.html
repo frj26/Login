@@ -3,44 +3,47 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Creditcard</title>
+        <link rel="stylesheet" href="css/signinforms.css">
     </head>
-  <body>
-        
-    <h1>Dear <a id= "profileGivenName"></a>, would you like to add your Credit Card information?</h1>
-        
-        Card number: <input type="text" id= "cardNumber" placeholder="Card Number" />
-        <br/>
-        Card holder's name: <input type="text" id= "cardHolderName" placeholder="Card Holder's Name" />
-        <br/>
-        <div>
-          <label for="validThru">Valid thru:  </label>
-                <select name="validThruMonth" id="validThruMonth" required>
-                    <option value="">Month</option>
-                    <option value="01">01</option>
-                    <option value="02">02</option>
-                    <option value="03">03</option>
-                </select>
+    <body>
+    
+        <div id="form">
+            <form>
 
-                <select name="validThruYear" id="validThruYear" required>
-                    <option value="">Year</option>
-                    <option>18</option>
-                    <option>19</option>
-                    <option>20</option>
-                </select>
+                <h1>Dear <a id= "profileGivenName"></a>, would you like to add your Credit Card information?</h1>
+                
+                Card number: <input type="text" id= "cardNumber" placeholder="Card Number" required />
+                <br>
+                Card holder's name: <input type="text" id= "cardHolderName" placeholder="Card Holder's Name" required/>
+            
+                <div>
+                    <label for="validThru">Valid thru:  </label>
+                    <select name="validThruMonth" id="validThruMonth" required>
+                        <option value="">Month</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                    </select>
+
+                    <select name="validThruYear" id="validThruYear" required>
+                        <option value="">Year</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                    </select>
+                </div>
+                <br>
+                CVV: <input type="text" id= "cvv" placeholder="CVV" />
+                <br/>
+                <input type="submit" value= "Add Credit Card" name="Add Credit Card" id="addCreditCard" /> <!--onclick="store()"-->
+            </form>
         </div>
-        CVV: <input type="text" value= "cvv" id= "cvv" placeholder="CVV" />
-        <br/>
-        <input type="submit" value= "Add Credit Card" name="Add Credit Card" id="addCreditCard" /> <!--onclick="store()"-->
-      </form>
-      <!-- Shipping Address ((Street, number, interior), postal code, city, country), Birth Date, Phone Number, Gender  -->
 
-      
-    </div>
-
-  </body>
-  <link rel="stylesheet" href="css/signinforms.css">
-
-  <script src="js/creditcardstorage.js" ></script>
+        <script src="js/creditcardstorage.js" ></script>
+    </body>
 
 </html>
 
