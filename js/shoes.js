@@ -22,7 +22,7 @@ class Shoe {
 
         "<h5>" + "Article no: xxxxx" + "</h5>" +
 
-        "<h>" + "Selec a size" + "</h5>"
+        "<h5>" + "Selec a size" + "</h5>"
 
         
     }
