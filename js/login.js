@@ -10,7 +10,7 @@ class User {
 }
 
 
-// Simple function to hash passwords in order for us not to store then in clear text
+// Simple function to hash passwords in order for us not to store them in clear text
 hashPassword(rawPassword){
   var a = 1, c = 0, h, o;
   if (rawPassword) {
