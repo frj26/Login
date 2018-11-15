@@ -18,6 +18,4 @@ window.onload = function loadUser() {
     document.getElementById("gender").innerHTML = userProfile[0].gender;
 
     document.getElementById("address").innerHTML = userProfile[0].address;
-
-
 }
