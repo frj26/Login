@@ -22,7 +22,7 @@ class Shoe {
 
         "<h5>" + "Article no: xxxxx" + "</h5>" +
 
-        "<h5>" + "Selec a size" + "</h5>"
+        "<p>" + "Select a size" + "</p>" +
 
         
         //Adding a select-menu for choosing size of the shoes
