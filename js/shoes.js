@@ -22,9 +22,20 @@ class Shoe {
 
         "<h5>" + "Article no: xxxxx" + "</h5>" +
 
-        "<h5>" + "Selec a size" + "</h5>"
-
+        "<p>" + "Select a size" + "</p>" +
         
+        //Adding a select-menu for choosing size of the shoes
+        "<select name='Choose size' id='sizeSelected'>" +
+            "<option value='EUR 41'>EUR 41</option>" +
+            "<option value='EUR 42'>EUR 42</option>" +
+            "<option value='EUR 43'>EUR 43</option>" +
+            "<option value='EUR 44'>EUR 44</option>" +
+            "<option value='EUR 45'>EUR 45</option>" + 
+            "<option value='EUR 46'>EUR 46</option>" +
+            "<option value='EUR 47'>EUR 47</option>" +
+        "</select>" +
+
+        "<input type='button' onclick='getValue()' value='Add to shopping cart'>"
     }
     }
 
@@ -38,3 +49,8 @@ window.shoes = {
 
 // Bind the button to a variable for later use
 var submit = document.getElementById('submit');
+
+// function for creating an alert about the user has added size x to the shopping cart 
+function getValue() {
+    alert("You've added size " + document.getElementById("sizeSelected").value + " to the shopping cart");
+}
