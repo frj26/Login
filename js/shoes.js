@@ -24,7 +24,7 @@ class Shoe {
 
         "<p>" + "Select a size" + "</p>" +
 
-        
+    
         //Adding a select-menu for choosing size of the shoes
         "<select name='Choose size' id='sizeSelected'>" +
             "<option value='EUR 41'>EUR 41</option>" +
