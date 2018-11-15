@@ -15,12 +15,12 @@
 
                 <h1>Dear <a id= "profileGivenName"></a>, would you like to add your Credit Card information?</h1>
                 
-                Card number: <input type="text" id= "cardNumber" placeholder="Card Number" required />
+                <input type="text" id= "cardNumber" placeholder="Card Number" required />
                 <br>
-                Card holder's name: <input type="text" id= "cardHolderName" placeholder="Card Holder's Name" required/>
+                <input type="text" id= "cardHolderName" placeholder="Card Holder's Name" required/>
             
                 <div>
-                    <label for="validThru">Valid thru:  </label>
+                    <label for="validThru">Expire date:  </label>
                     <select name="validThruMonth" id="validThruMonth" required>
                         <option value="">Month</option>
                         <option value="01">01</option>
@@ -36,7 +36,7 @@
                     </select>
                 </div>
                 <br>
-                CVV: <input type="text" id= "cvv" placeholder="CVV" />
+                <input type="text" id= "cvv" placeholder="CVV" />
                 <br/>
                 <input type="submit" value= "Add Credit Card" name="Add Credit Card" id="addCreditCard" /> <!--onclick="store()"-->
             </form>
