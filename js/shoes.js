@@ -22,7 +22,12 @@ class Shoe {
 
         "<h5>" + "Article no: xxxxx" + "</h5>" +
 
+<<<<<<< HEAD
         "<p>" + "Select a size" + "</p>" +
+=======
+        "<h>" + "Selec a size" + "</h5>"
+
+>>>>>>> c2d5ff91d8188e6b96211b4fa781283afa5d1a7c
         
         //Adding a select-menu for choosing size of the shoes
         "<select name='Choose size' id='sizeSelected'>" +
