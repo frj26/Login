@@ -2,46 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login function</title>
-  
-</html>
+    <link rel="style for the nav-bar" href="css/Newfrontpagestyle.css">
 </head>
-
     <body>
+        
+        <h1>Login in to your profile</h1>
 
-        <h1>Amazing login function</h1>
+        <div>
+            <!-- Placeholder makes the user know they need to write Email and password, which will be deleted when they click the box-->
+            <input type="text" placeholder= "E-mail" name="email" id="email"/>
+            <input type="password" placeholder="Password" name="password" id="password"/> 
 
-        <!-- Placeholder makes the user know they need to write Email and password, which will be deleted when they click the box-->
-        <input type="text" placeholder= "E-mail" name="email" id="email"/>
-        <input type="password" placeholder="Password" name="password" id="password"/> 
+            <!-- This is our submit button-->
+            <input type="button" value="Login" name="submit" id="submit"/>
+        </div>
 
-        <!-- This is our submit button-->
-        <input type="button" value="Login" name="submit" id="submit"/>
+        <div>
+            <!--We have created a text that will appear if the login is incorrect -->
+            <span id="loginResult"></span>
+        </div>
+        
+        
+        <div>
+            <!-- Creating Hyperlink for reset password-->
+            <a href="resetpassword.html">Forgot password?</a>
+            <br>
+            <br>
+            <!-- Creating Hyperlink for 'Registration Page': -->
+            <a href="sign-in-forms.html">Register here!</a> 
+        </div>
 
-        <br />
-        <br />
-
-        <!--TODO: Can this be deleted? We have created a text that will appear if the login is incorrect -->
-        <span id="loginResult"></span>
-
-        <br />
-        <br />
-
-        <!-- Creating Hyperlink for reset password-->
-        <a href="resetpassword.html">Forgot password?</a>
-
-        <br />
-        <br />
-
-        <!-- Creating Hyperlink for 'Registration Page': -->
-        <a href="sign-in-forms.html">Register here!</a> 
-
-
-
+        <script src="js/generic.js"></script>
         <!-- Connecting to the CSS file: -->
         <link rel="stylesheet" href="css/login.css">
-
         <!-- Connecting to the JavaScript file: -->
         <script src="js/login.js"></script>
+        
 
-</body>
+    </body>
+</html>

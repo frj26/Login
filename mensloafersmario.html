@@ -7,12 +7,18 @@
     <title>Mario Loafers in brown by Vagabond</title>
     <link rel="stylesheet" href="css/productsinformationpage.css">
     <link rel="front page stylesheet" href="css/Newfrontpagestyle.css">
-
-
     <script src="js/shoes.js"></script>
 </head>
 <body>
-    <div id="navbar"><div class='navbar'></div></div>
+    <header>
+        <!-- Calling the title of our webshop from generic.js -->
+        <div id="webshopName"><div class='webshopName'></div></div>
+        
+        <!-- Calling navigation-bar from generic.js -->
+        <div id="navbar"><div class='navbar'></div></div>
+    </header>
+        
+    <br>
 
     <div id="column1">          
         <!-- Slideshow container -->
@@ -39,7 +45,7 @@
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
     
-    <!-- The dots/circles -->
+        <!-- The dots/circles -->
         <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
@@ -49,13 +55,14 @@
 
  
     <div id="column2">
-            <div id="body"></div>
+        <div id="body"></div>
       
-            <script> document.getElementById("body").innerHTML = window.shoes.loafer1.createHTML();
+        <script> 
+            document.getElementById("body").innerHTML = window.shoes.loafer1.createHTML();
         </script>
 
-      <!-- Adding a select-menu for choosing size (IMPORTANT: how do we make sure this is stored if they go to the shopping cart) -->
-      <select name="Choose size">
+        <!-- Adding a select-menu for choosing size (IMPORTANT: how do we make sure this is stored if they go to the shopping cart) -->
+        <select name="Choose size">
             <option value="Select a size">Select a size</option>
             <option value="EUR41" id="41">EUR 41</option>
             <option value="EUR42">EUR 42</option>
@@ -64,8 +71,9 @@
             <option value="EUR45">EUR 45</option>
             <option value="EUR46">EUR 46</option>
             <option value="EUR47">EUR 47</option>
-          </select>
-          <button type="button">Add to cart</button>
+        </select>
+        
+        <button type="button">Add to cart</button>
 
     <script src="js/productsinformationpage.js"></script>
     <script src="js/generic.js"></script>

@@ -1,11 +1,12 @@
- p {
+ body {
      background-color: white; 
+     font-family: Arial, Helvetica, sans-serif;
  }
  
  /* Navbar container */
  .navbar {
     overflow: hidden;
-    background-color: #e9e9e9;
+    background-color: #49274A;
     font-family: Arial;
   }
   
@@ -22,7 +23,7 @@
   
   /* Style the "active" element to highlight the current page */
 .navbar a.active {
-    background-color: #ffdca8;
+    background-color: #94618E; 
     color: white;
 }
   /* The dropdown container */
@@ -100,14 +101,3 @@ form.example::after {
         border: 1px solid #ccc;
     }
 } 
-
-/* CSS FOR THE GENERIC FOOTER */
-.footer-p {
-  background-color: black;
-  height: 100px;
-  color:white;
-  position: absolute !important;
-  bottom: 0%;
-  width: 100%;
-
-}

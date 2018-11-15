@@ -11,8 +11,6 @@
 }
 
 
-* {box-sizing:border-box} /*box for the product image and the arrows*/
-
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;

@@ -24,7 +24,7 @@ class Shoe {
 
         
     }
-}
+    }
 
 // Creating the object of the shoes specific shoes. Chose 'Windows' at it needs to be global, so it can be called with the html files of specific shoes:
 window.shoes = {
