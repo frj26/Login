@@ -9,7 +9,7 @@ if(navbar !== null) {
 
 var navbar = document.getElementById("navbar");
 if(navbar !== null) {
-  navbar.innerHTML = "<div class='navbar'> <a class='active' href='../Login/frontpage.html'>Home</a> <div class='dropdown'> <button id='loginbutton' class='dropbtn'>Log in / Sign up</button> <div class='dropdown-content'> <a href='login.html'>Log in</a> <a href='sign-in-forms.html'>Sign Up</a> </div> </div> <div class='dropdown'> <button class='dropbtn'>Men</button> <div class='dropdown-content'> <a href='../Login/menboots.html'>Boots</a> <a href='../Login/menloafers.html'>Loafers</a> <a href='../Login/mensneakers.html'>Sneakers</a> </div> </div> <div class='dropdown'> <button class='dropbtn'>Women</button> <div class='dropdown-content'> <a href='../Login/womenboots.html'>Boots</a> <a href='../Login/womenheels.html'>Heels</a> <a href='../Login/womenloafers.html'>Loafers</a> <a href='../Login/womensneakers.html'>Sneakers</a> </div> </div>";
+  navbar.innerHTML = "<div class='navbar'> <a class='active' href='../Login/frontpage.html'>Home</a> <div class='dropdown'> <button id='loginbutton' class='dropbtn'>Log in / Sign up</button> <div class='dropdown-content'> <a href='login.html'>Log in</a> <a href='sign-in-forms.html'>Sign Up</a> </div> </div> <div class='dropdown'> <button class='dropbtn'>Men</button> <div class='dropdown-content'> <a href='../Login/menboots.html'>Boots</a> <a href='../Login/menloafers.html'>Loafers</a> <a href='../Login/mensneakers.html'>Sneakers</a> </div> </div> <div class='dropdown'> <button class='dropbtn'>Women</button> <div class='dropdown-content'> <a href='#'>Boots</a> <a href='#'>Heels</a> <a href='#'>Loafers</a> <a href='#'>Sneakers</a> </div> </div>";
 }
 
 
