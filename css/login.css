@@ -2,43 +2,43 @@ body {
     color: white;
     font-family: Tahoma;
     background-color:  #49274A;
-    border: white double 3px;
+    border: white double 3px; /*the border around the login function*/
     width: 50%; /* the size of the box*/
-    box-align: center;
+    box-align: center; /*the login box is aligned in the middle of the page*/
     padding: 20px; /* the space between the box's lines and the text inside*/
     text-align: center;
     margin: auto; /* align the box to be centered*/
-    margin-top: 30px;
+    margin-top: 30px; /*make the login function have a little space towards the top of the page*/
   }
   
   h1 {
     color: white; /* #49274A; */
-    font-variant: small-caps;
+    font-variant: small-caps; /*the small-caps make the heading be written in caps*/
   }
   
   body input {
-    background-color:#49274A; /*white;*/
-    border: 1px white solid;
+    background-color:#49274A; 
+    border: 1px white solid; 
     padding: 15px; /* how high the buttons are */
-    color: white; 
+    color: white; /*text color*/
     margin-bottom: 15px; /* how much space there are between the buttons */
     width: 250px; /* how long the buttons are */
     font-size: 0.9em; 
   }
   
  body input:hover, body input:focus {
-    border: 1px #94618E solid;
-    color: #94618E;
+    border: 1px #94618E solid; /*changes the input boxes' borders colors when hovered */
+    color: #94618E;/*changes the text color in the input boxes when hovered*/
   }
 
   a:link {
       color: white;
-      text-decoration-style: dashed; /* the links have dashed underlines */
+      text-decoration-style: dashed; /* the link has dashed underlines */
   }
 
   p {
     color: white;
-    text-decoration: dashed underline; /* the links have dashed underlines */
+    text-decoration: dashed underline; /* the text has dashed underlines */
   }
 
   a:visited {
@@ -50,9 +50,9 @@ body {
   }
 
   #submit {
-    background-color: #94618E;
-    color: white;
-    border: 1.5px #94618E solid; 
-    padding: 10px 24px;
+    background-color: #94618E; /*the color of the submit botton*/
+    color: white; /*the font in the button is white*/
+    border: 1.5px #94618E solid; /*the button's border size and color*/
+    padding: 10px 24px; /*size of the button*/
     font-size: 16px;
   }

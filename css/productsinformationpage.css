@@ -1,7 +1,7 @@
 #column1 {
-    float: left;
-    width: 49%;
-    height: 800px;
+    float: left; /*the column is positioned to the left*/
+    width: 49%; /*the width of the column is set to 49%. If both column was set to 50%, it didn't look nice*/
+    height: 800px; /* the height of the column*/
 }
 
 #column2 {
@@ -13,28 +13,27 @@
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
+  max-width: 1000px; /*the width of the slideshow cannot be bigger than this. This is only relevant for large computer screens*/
+  position: relative; /*position the images in the left column*/
   margin: auto;
 }
 
-/* Hide the images by default */
+/* Hide the images by default. This is required for the function for work properly */
 .mySlides {
     display: none;
 }
 
 /* Next & previous buttons */
 .prev, .next {
-  cursor: pointer;
+  cursor: pointer; /*changes the cursor to a pointer when hovered*/
   position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: darkgray;
+  top: 50%; /*make the buttons be positioned in the middle of the picture*/
+  margin-top: -22px; /*positions the buttons*/
+  padding: 16px; /*sets the size of the buttons grey background */
   font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
+  color: darkgray;
+  font-size: 18px; /*the arrow's size*/
+  transition: 0.6s ease; /*when hovered it takes 0,6s before changes happen*/
   border-radius: 0 3px 3px 0;
 }
 
@@ -61,17 +60,17 @@
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer; /*changes the cursor*/
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
+  height: 15px; /*height of the dot*/
+  width: 15px; /*width of the dot*/
+  margin: 0 2px; /*make the dots be separeted a little*/
   background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+  border-radius: 50%; /*makes the dot become round*/
+  display: inline-block; /*makes sure the dots are positioned below the image*/
+  transition: background-color 0.6s ease; /*it takes 0,6s before the background-color of the dots changes when hovered*/
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #717171; /*changes the dot's colors depended on what image is showed and if the dot is hovered with the mouse*/
 }
 
 h1 {
@@ -93,3 +92,24 @@ h3 {
     font-size: 20px;
 }
 
+/*the following code is for the product catalogue/overview of products*/
+ul.products li {
+  width: 370px; /* adjust the size of the catalog block */
+  display: inline-block; /* this creates the catalog effect */
+  text-align: center; /* align the image to center */
+  background-color: white; /* background color of each */
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px; /* rounded borders effect */
+  border: 2px solid #585858; /* border and color */
+}
+
+/*the following code is for the product catalogue/overview of products*/
+a {
+  color:black; /*the links are black*/
+  text-decoration: none; /*the links are not underlined as the default settings are*/
+}
+
+/*the following code is for the product catalogue/overview of products*/
+a:hover {
+  text-decoration: underline; /*changes the links to underlined when the mouse is on the text*/
+}
