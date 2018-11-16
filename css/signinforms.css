@@ -4,13 +4,14 @@ body {
   color: white;
 }
 
+/*css for the 'birthday' text*/
 label {
-  color: white;
+  color: white; 
   width: auto;
 }
 
 div {
-    margin-bottom: 10px; /*the distance between the fields*/
+    margin-bottom: 10px; /*the distance between the input fields*/
     width: auto;
   }
 
@@ -20,16 +21,16 @@ div {
   }
 
   #form h1 {
-    color: white; 
+    color: white; /*the text 'sign up' is white*/
   }
   
-  #form input{
+  #form input, #userProfile input{
     background-color: #49274A; /*the background color of the fields within the form */
-    border: 1.5px white solid;
-    padding: 10px;
-    color: white;
-    margin-bottom: 20px;
-    width: 200px;
+    border: 1.5px white solid; /*the input fields' borders sizes and color*/
+    padding: 10px; /*the input fields are positioned a little to the left of the page*/
+    color: white; /*when you write in the input fields, the text is white*/
+    margin-bottom: 20px; /*the vertical distance between the content*/
+    width: 200px; /*the length of the input fields*/
   }
 
   #form input[type=radio] {
@@ -40,20 +41,19 @@ div {
     border: 1.5px #94618E solid; /*this changes the form's field to a new border color when the mouse is hovered over the field*/
   }
   
-  #form input[type=submit] {
+  #form input[type=submit], #userProfile input[type=submit] {
     background-color: #94618E; /*the submit button is a new  color*/
-    border: 1.5px #94618E solid; 
-    color: white; 
+    border: 1.5px #94618E solid; /*the submit button's color and size*/
+    color: white; /*submit text is white*/
     width: 225px; /*make the width as long as the other fields*/
   }
-  
 
 ::placeholder{
     color: white; /*the placeholder text within the fields are white*/
   }
 
 a:link {
-    color: white;
+    color: white; /*links are written with white text*/
     text-decoration-style: dashed; /* the links have dashed underlines */
 }
 
@@ -61,39 +61,18 @@ a:visited {
   color: white; /*make sure the links font color stay white even though you have visited the links*/
 } 
 
-/* The below four rules for the IDs postalcode - country is for the profile.html file.*/
-#postalCode {
-  background-color: #49274A;
-  color: white; 
-} 
-
-#streetNumber {
-  background-color: #49274A;
-  color: white; 
-}
-
-#city {
-  background-color: #49274A;
-  color: white; 
-}
-
-#country {
-  background-color: #49274A;
-  color: white; 
-}
-
 /*The following two rules are for the button in the creditcardadded.html file*/
 #button {
-  background-color: #94618E;
-  color: white;
-  border: 1.5px #94618E solid; 
-  padding: 10px 24px;
-  font-size: 16px;
+  background-color: #94618E; /*button's background color*/
+  color: white; /*button's text is white*/
+  border: 1.5px #94618E solid; /*the button's border size and color*/
+  padding: 10px 24px; /*make the size of the button and the pink area bigger*/
+  font-size: 16px; /*the font size is the same as the font written in <p>*/
 }
 
 #creditcardAdded {
   font-size: 16px;
-  padding: 30px;
-  color: white;
-  font-family: Tahoma;
+  padding: 30px; /*places the text to the left and away from the top*/
+  color: white; /*text color*/
+  font-family: Tahoma; /*same font family as the rest of the CSS files*/
 }

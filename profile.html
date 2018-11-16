@@ -5,43 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Profile</title>
+    <!--Linking to the CSS file-->
+    <link rel="stylesheet" href="css/signinforms.css">
 </head>
-    <head>
-        <meta charset="utf-8">
-        <title>My profile</title>
-    </head>
-  <body>
+<body>
         
-    <div id="userProfile">
-      <form action="updatedprofile.html" method="GET">
-        <p>Name: </p><p id= "givenName"></p>
-        <p>Last Name: </p><p id= "familyName"></p>
-        <p>Email: </p><p id= "email"></p>
-        <p>Password: </p><p id= "password"></p>
-        <p>Birthdate: </p><p id= "birthdate"></p>
-        <p>Gender: </p><p id= "gender"></p>
-        <br/>
-        <h1>Add more information</h1>
-        <!-- Birthdate <input type="text" id= "birthdate" placeholder="DDMMYYYY" />
-        Gender <input type="text" id= "gender" placeholder="Gender" />
-        <br/> -->
-        Address 
-        <input type="text" id= "streetNumber" placeholder="Street, number, interior" />
-        <input type="text" id= "postalCode" placeholder="Postal Code" />
-        <input type="text" id= "city" placeholder="City" />
-        <input type="text" id= "country" placeholder="Country" />
-        <br/>
-        <input type="submit" value= "Add Address" name="Add Address" id="addAddress" /> <!--onclick="store()"-->
-      </form>
-      <!-- Shipping Address ((Street, number, interior), postal code, city, country), Birth Date, Phone Number, Gender  -->
+  <div id="userProfile">
 
+    <!--TODO: comments here-->
+    <form action="updatedprofile.html" method="GET">
+
+      <!--A heading introducing the user to the site-->
+      <h1>Welcome to your profile!</h1>
+
+      <!--The information contained here will be the information which the user registered with-->
+      <p>Name: </p><p id= "givenName"></p>
+      <p>Last Name: </p><p id= "familyName"></p>
+      <p>Email: </p><p id= "email"></p>
+      <p>Password: </p><p id= "password"></p>
+      <p>Birthdate: </p><p id= "birthdate"></p>
+      <p>Gender: </p><p id= "gender"></p>
       
-    </div>
+      <br>
+      
+      <!--A new heading which makes it clear for the user that a new section has started-->
+      <h1>Add more information</h1>
+        
+      <p>You can add your address below</p> 
 
-  </body>
-  <link rel="stylesheet" href="css/signinforms.css">
+      <!--placeholder is the text that appears before the user writes something-->
+      <input type="text" id= "streetNumber" placeholder="Street, number, interior" />
+      <input type="text" id= "postalCode" placeholder="Postal Code" />
+      <input type="text" id= "city" placeholder="City" />
+      <input type="text" id= "country" placeholder="Country" />
+      
+      <!--This is the button for submitting an address-->
+      <input type="submit" value= "Add Address" name="Add Address" id="addAddress" />
+      
+    </form>
+      
+  </div>
 
+  <!--Linking to the javascript file-->
   <script src="js/profilefunctions2.js" ></script>
+
+</body>
 
 </html>
 
