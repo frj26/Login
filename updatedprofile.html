@@ -5,11 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Edit my account</title>
+        <!--Linking to CSS file-->
+        <link rel="stylesheet" href="css/signinforms.css">
     </head>
   <body>
         
     <div id="userProfile">
       <form>
+        <!--The information contained here will be the information which the user registered with-->
         Name: <p id= "profileGivenName"></p>
         Last Name: <p id= "profileFamilyName"></p>
         Email: <p id= "profileEmail"></p>
@@ -19,19 +22,20 @@
         Address: <p id= "address"></p>
       </form>
       
+      <!--Button that sends the users to a new page where they can add their credit card information-->
       <form method="get" action="creditcard.html">
-        <button type="submit">Add credit card information.</button>
+        <input type="submit" value="Add credit card information">
       </form>
 
+      <!--Button that redirects the user to the webshop's frontpage-->
       <form method="get" action="frontpage.html">
-        <button type="submit">Browse products.</button>
+        <input type="submit" value="Browse products">
       </form>
       
 
     </div>
-  
-    <link rel="stylesheet" href="css/signinforms.css">
 
+    <!--Linking to JS file-->
     <script src="js/updatedprofilefunctions.js" ></script>
 
   </body>
