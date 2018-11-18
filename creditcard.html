@@ -1,64 +1,69 @@
 <!DOCTYPE html>
 <!--It's a best practice to always declare DOCTYPE!-->
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <!-- Adding Title -->
-        <title>Creditcard</title>
+    <!-- Adding Title -->
+    <title>Creditcard</title>
 
-        <!-- Adding CSS -->
-        <link rel="stylesheet" href="css/signinforms.css">
-    </head>
-    <body>
+    <!-- Adding CSS -->
+    <link rel="stylesheet" href="css/signinforms.css">
+</head>
+<body>
     
-        <div id="form">
-            <form>
+    <div id="form">
+        <form>
                 
-                <!--the profileGivenName make the user's inputted name appear, so it e.g. says 'Dear Peter, would you...'-->
-                <h1>Dear <a id= "profileGivenName"></a>, would you like to add your Credit Card information?</h1>
+            <!--the profileGivenName make the user's inputted name appear, so it e.g. says 'Dear Peter, would you...'-->
+            <h1>Dear <a id= "profileGivenName"></a>, would you like to add your Credit Card information?</h1>
                 
-                <!-- Textbox in which the user can input cardnumber -->
-                <input type="text" id= "cardNumber" placeholder="Card Number" required />
-                <br>
-                <!-- Textbox in which the user can input Cardholder name -->
-                <input type="text" id= "cardHolderName" placeholder="Card Holder's Name" required/>
+            <!-- Textbox in which the user can input cardnumber -->
+            <input type="text" id= "cardNumber" placeholder="Card Number" required />
             
-                <div>
+            <br>
+            
+            <!-- Textbox in which the user can input Cardholder name -->
+            <input type="text" id= "cardHolderName" placeholder="Card Holder's Name" required/>
+            
+            <div>
 
-                    <!-- Dropdown menu allowing the user to choose month of expire date -->
-                    <label for="validThru">Expire date:  </label>
-                    <select name="validThruMonth" id="validThruMonth" required>
-                        <option value="">Month</option>
-                        <option value="01">01</option>
-                        <option value="02">02</option>
-                        <option value="03">03</option>
-                    </select>
+                <!-- Dropdown menu allowing the user to choose month of expire date -->
+                <label for="validThru">Expire date:  </label>
+                <select name="validThruMonth" id="validThruMonth" required>
+                    <option value="">Month</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                </select>
 
-                    <!-- Dropdown menu allowing the user to choose year of expiration  -->
-                    <select name="validThruYear" id="validThruYear" required>
-                        <option value="">Year</option>
-                        <option>18</option>
-                        <option>19</option>
-                        <option>20</option>
-                    </select>
-                </div>
+                <!-- Dropdown menu allowing the user to choose year of expiration  -->
+                <select name="validThruYear" id="validThruYear" required>
+                    <option value="">Year</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                </select>
+            </div>
 
-                <!-- Textbox in which the user can input CVV -->
-                <br>
-                <input type="text" id= "cvv" placeholder="CVV" />
-                <br/>
+            <br>
 
-                <!-- Submitbutton - allows the information to be stored -->
-                <input type="submit" value= "Add Credit Card" name="Add Credit Card" id="addCreditCard" />
-            </form>
-        </div>
+            <!-- Textbox in which the user can input CVV -->
+            <input type="text" id= "cvv" placeholder="CVV" />
+            
+            <br>
 
-        <!-- Linking to JS file -->
-        <script src="js/creditcardstorage.js" ></script>
-    </body>
+            <!-- Submitbutton - allows the information to be stored -->
+            <input type="submit" value= "Add Credit Card" name="Add Credit Card" id="addCreditCard" />
+        </form>
+    </div>
+
+     <!-- Linking to JS file -->
+    <script src="js/creditcardstorage.js" ></script>
+    
+</body>
 
 </html>
 
