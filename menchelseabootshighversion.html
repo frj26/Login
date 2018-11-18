@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Inserting title of the specific page -->
     <title>NORMANTON BOOTS by Polo Ralph Lauren</title>
+
+    <!-- Linking to CSS and shoes.js whereby we can call the class containing the productinformation -->
     <link rel="stylesheet" href="css/productsinformationpage.css">
     <link rel="front page stylesheet" href="css/Newfrontpagestyle.css">
 
@@ -13,14 +17,17 @@
 <body>
 
     <header>
+
         <!-- Calling navigation-bar from generic.js -->
         <div id="navbar"><div class='navbar'></div></div>
+
     </header>
         
     <br>    
 
-    <div id="column1">          
-        <!-- Slideshow container -->
+    <div id="column1">  
+
+        <!-- Slideshow container. This allows us to have more pictures -->
         <div class="slideshow-container">
             
             <!-- Images with number and caption text -->
@@ -39,12 +46,12 @@
                 <img src="Pictures/menboots2two.jpg" style="width:90%">
             </div>
         
-            <!-- Next and previous buttons -->
+            <!-- Next and previous buttons. 94 is for the arrow pointing left, and 95 is for an arrow pointing 95 (for changing picture) -->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
     
-        <!-- The dots/circles -->
+        <!-- The dots/circles, that will change picture when clicked -->
         <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
@@ -56,9 +63,13 @@
     <div id="column2">
             <div id="body"></div>
 
+        <!-- Here we call the class from the shoes.js file. Instead of having similar code on every page, we decided to make a js.file containing the classes and informaiton, which can be called in any HTML. -->
+
         <script> 
             document.getElementById("body").innerHTML = window.shoes.boots1.createHTML();
         </script>
+
+    <!-- Linking to the generic.js - thereby we can add the navbar -->
 
     <script src="js/generic.js"></script>
     <script src="js/productsinformationpage.js"></script>
