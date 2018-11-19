@@ -13,24 +13,20 @@ class Shoesoverview {
         createHTML() {
             return "<a>" + this.productimage + "</a>" +
 
-            "<h4>" + this.productname + "</h4>"
+            "<h4>" + this.productname + "</h4>" +
 
             "<h5>" + this.brandname + "</h5>" + 
     
-            "<p>" + this.price + "<p>" +
-            
-            "<img src='Pictures/menboots2.jpg' width='250'>"
-            "<a href='menchelseabootshighversion.html'>"    
-                "<h4>NORMANTON BOOTS</h4>"
-                "<h5>by Polo Ralph Lauren</h5>"
-               "<p>200$</p>"
-           
+            "<p>" + this.price + "<p>" 
+        
         }
         }
     
     // Creating the object of the shoes specific shoes. Chose 'Windows' at it needs to be global, so it can be called with the html files of specific shoes:
     window.shoes = {
-        normantonBoot: new Shoesoverview("img src='../pictures/menboots2.jpg' width='250'", "NORMANTON BOOTS", "by Polo Ralph Lauren", "200§")
+        normantonBoot: new Shoesoverview("<img src='pictures/menboots2.jpg' width='250'>", "NORMANTON BOOTS", "by Polo Ralph Lauren", "200$"),
+        rossiBoot: new Shoesoverview ("<img src='pictures/menboots1.jpg' width='250'>", "ROSSI SDT CHELSEA BOOT", "by New Look", "150$")
+
     }; 
 
     

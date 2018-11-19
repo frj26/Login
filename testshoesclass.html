@@ -9,15 +9,22 @@
 </head>
 <body>
 
+    <ul class="products">
+        <li id="body">
+            <!-- Here we call the class from the shoes.js file. Instead of having similar code on every page, we decided to make a js.file containing the classes and informaiton, which can be called in any HTML. -->
+            <script> 
+                document.getElementById("body").innerHTML = window.shoes.normantonBoot.createHTML(); 
+            </script>  
+        </li>
+        <li id=body1>
+            <script>
+                document.getElementById("body1").innerHTML = window.shoes.rossiBoot.createHTML();
+            </script>
+        </li>
+    </ul>
+
+
+    <link rel="stylesheet" href="css/productsinformationpage.css">
     
-        <div id="body"></div>
-        
-        <!-- Here we call the class from the shoes.js file. Instead of having similar code on every page, we decided to make a js.file containing the classes and informaiton, which can be called in any HTML. -->
-        <script> 
-            document.getElementById("body").innerHTML = window.shoes.normantonBoot.createHTML();
-        </script>        
-
-
-
 </body>
 </html>
