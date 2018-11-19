@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Shoes</title>
     <link rel="stylesheet" href="css/Newfrontpagestyle.css">
+    <!--We're calling the js file because it needs to be loaded as the first thing in our page-->
+    <script src="js/Shoesoverview.js"></script>
 </head>
 <body>
     <header>
@@ -13,11 +15,32 @@
     </header>  
 
     <br>
-    <!--Inserting a frontpage picture-->
-    <img src="Pictures/sneakerheads.png" alt="Shoes"/>
 
-    <!--Connecting to the generic js file containing our navigation bar and webshop title-->
+    <h2>NEW IN:</h2>
+
+    <!--Inserting three shoes on our frontpage which make the user aware of 'new in' shoes-->
+    <ul class="products">
+        <li id="body">
+            <!-- Here we call the class of shoes from the shoesoverview.js file. It is set up in a list to make the CSS easier-->
+            <script> 
+                document.getElementById("body").innerHTML = window.shoes.normantonBoot.createHTML(); 
+            </script>  
+        </li>
+        <li id="body1">
+            <script>
+                document.getElementById("body1").innerHTML = window.shoes.marioLoafer.createHTML();
+            </script>
+        </li>
+        <li id="body2">
+            <script>
+                document.getElementById("body2").innerHTML = window.shoes.slhdavidSneaker.createHTML();
+            </script>
+        </li>    
+    </ul>
+
+    <!--Connecting to the generic js file containing our navigation bar and webshop title as well as CSS file-->
     <script src="js/generic.js"></script>
+    <link rel="stylesheet" href="css/productsinformationpage.css">
 
 </body>
 </html>
