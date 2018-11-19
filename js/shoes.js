@@ -46,10 +46,6 @@ window.shoes = {
     loafer1: new Shoe("MARIO LOAFERS IN BROWN", "by Vagabond", "200$", "")
 }; 
 
-
-// Bind the button to a variable for later use
-var submit = document.getElementById('submit');
-
 // function for creating an alert about the user has added size x to the shopping cart 
 function getValue() {
     alert("You've added size " + document.getElementById("sizeSelected").value + " to the shopping cart");

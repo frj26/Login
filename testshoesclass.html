@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/Shoesoverview.js"></script>
+</head>
+<body>
+
+    
+        <div id="body"></div>
+        
+        <!-- Here we call the class from the shoes.js file. Instead of having similar code on every page, we decided to make a js.file containing the classes and informaiton, which can be called in any HTML. -->
+        <script> 
+            document.getElementById("body").innerHTML = window.shoes.normantonBoot.createHTML();
+        </script>        
+
+
+
+</body>
+</html>
