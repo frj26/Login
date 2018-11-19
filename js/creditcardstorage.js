@@ -53,8 +53,8 @@ function storeCreditCard(e){
     var encryptedCreditCard = window.btoa(usersString);
 //Finally we tell the system to save the encrypted information in local storage under the key "creditCard".
     localStorage.setItem('creditCard', encryptedCreditCard);
-//Once it finishes, we tell the system to forward us to the creditcardadded.html page.
-    document.location.href = 'creditcardadded.html';
+//Once it finishes, an alert is created telling the credit card was added
+    alert("Your credit card information has been added succesfully!")
     }
     else{
         alert("Please fill in all the information.")
