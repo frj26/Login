@@ -1,13 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width='device-width', initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Registration</title>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Sign up</title>
+        
+        <!--Linking to CSS file-->
+        <link rel="stylesheet" href="css/register.css">
+    </head>
+    <body>
+        
+        <div id="form">
 
-<body>
-    <h1>Register here</h1>
-</body>
+            <form>
+
+                <!--The heading-->
+                <h1>Sign up</h1>
+                
+                <!--Placeholder is the text that appears before the user writes something in the field-->
+                <input type="text" id="givenName" placeholder="Given name" required />
+
+                <input type="text" id="familyName" placeholder="Family name" required />
+
+                <input type="email" id="email" placeholder="Email" required />
+
+                <!--This is made in a drop-down menu. Ideally all months, dates and years should have been added-->
+                <div>
+                    <label for="birthday">Birthday: </label>
+                        <select name="month" id="monthBirthdate" required>
+                            <option value="">Month</option>
+                            <option value="01">January</option>
+                            <option value="02">February</option>
+                            <option value="03">March</option>
+                        </select>
+
+                        <select name="day" id="dayBirthdate" required>
+                            <option value="">Day</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                        </select>
+
+                        <select name="year" id="yearBirthdate" required>
+                            <option value="">Year</option>
+                            <option>1990</option>
+                            <option>1991</option>
+                            <option>1992</option>
+                        </select>
+                </div>
+                <div>
+                    <!--Radio type is the round dots to click in.-->
+                    <!--By giving the male and female the same name ('gender'), the user is only allowed to click in one of the buttons-->
+                    <input type="radio" id= "gender" name="gender" value="female" required />
+                    <label for="Female">Female:</label>
+                    <label for="Male">Male:</label>
+                    <input type="radio" id= "gender" name="gender" value="male" required /> <!--  radio is the round button type. -->
+                </div>
+                
+                <!--The "pattern" part in here is what makes the "password" require numbers, uppercase, and a length of 8 characters. -->
+                <!--The title text will appear if the user doesn't meet the password requirements-->
+                <input type="password" id= "password" placeholder="Password" />
+                <input type="password" id= "repeatPassword" placeholder="Repeat Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" />
+                
+                <!--The submit button for signing up-->
+                <input type="submit" value="Submit" name="submit" id="submit"/>
+            </form>
+        </div>
+
+        <!--Connecting to the JS file-->
+        <script src="js/register.js" ></script>
+
+    </body>
+
 </html>
+

@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Men loafers</title>
+    
+    <!--Linking to CSS files-->
+    <link rel="stylesheet" href="css/productsinformationpage.css">
+    <link rel="stylesheet" href="css/frontpage.css">
+
     <!--We're calling the js file because it needs to be loaded as the first thing in our page-->
     <script src="js/Shoesoverview.js"></script>
 </head>
 <body>
+    
     <header>
         <!-- Calling navigation-bar from generic.js -->
         <div id="navbar"><div class='navbar'></div></div>
@@ -20,29 +26,29 @@
     <!-- This also allows us to call the shoes on the frontpage-->
     <ul class="products">
         <li id="body">
+
             <!-- Here we call the class of shoes from the shoesoverview.js file. It is set up in a list to make the CSS easier-->
             <script> 
                 document.getElementById("body").innerHTML = window.shoes.marioLoafer.createHTML(); 
             </script>  
         </li>
+
         <li id="body1">
             <script>
                 document.getElementById("body1").innerHTML = window.shoes.owengreenLoafer.createHTML();
             </script>
         </li>
+
         <li id="body2">
             <script>
                 document.getElementById("body2").innerHTML = window.shoes.owennavyLoafer.createHTML();
             </script>
-        </li>    
+        </li> 
+
     </ul>
 
-    <!-- Linking to Generic.js by which the navbar is added. Furthermore linking to CSS -->
-    <link rel="stylesheet" href="css/productsinformationpage.css">
-
+    <!-- Linking to Generic.js so the navigation bar and webshop title are shown-->
     <script src="js/generic.js"></script>
-    
-    <link rel="stylesheet" href="css/Newfrontpagestyle.css">
 
 </body> 
 </html>

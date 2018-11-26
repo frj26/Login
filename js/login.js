@@ -9,14 +9,14 @@ class User {
     this.password = this.hashPassword(password);
 }
 
-
 // Simple function to hash passwords in order for us not to store them in clear text
 hashPassword(rawPassword){
   var a = 1, c = 0, h, o;
   if (rawPassword) {
     a = 0;
-    /*jshint plusplus:false bitwise:false*/ //what does this mean
-    for (h = rawPassword.length - 1; h >= 0; h--) {
+    // Jshint plusplus:false - This option prohibits the use of unary increment and decrement operators (++ , --)
+    // Jshint bitwise:false - This option prohibits the use of bitwise operators such as ^,| and others
+      for (h = rawPassword.length - 1; h >= 0; h--) {
       o = rawPassword.charCodeAt(h);
       a = (a<<6&268435455) + o + (o<<14);
       c = a & 266338304;
@@ -52,13 +52,18 @@ var resultSpan = document.getElementById('loginResult');
 
 // Bind the onClick-function to our own function called authUser. When the user clicks, the function starts
 submit.onclick = function authUser(){
+  
 // Bind the two input fields and get the value
 var inputEmail = document.getElementById('email');
 var inputPassword = document.getElementById('password');
+var inputUserProfile = localStorage.getItem("users");
+var profileInfo = JSON.parse(inputUserProfile); 
+var emailCheck = profileInfo[0].inputEmail;
+var passwordCheck = profileInfo[0].inputPassword;
 
-  
   // The user is not able to leave the email or password fields blank
   if(inputEmail.value.length == 0 || inputPassword.value.length == 0){
+    
     // We set the resultspan with a new text and return false to get out of this function
     resultSpan.innerText = "You need to enter an email and password in order to use the system";
     return false;
@@ -86,7 +91,8 @@ var inputPassword = document.getElementById('password');
     }
 
     // If username and password matches one from our loop
-    if(user.email == inputEmail.value && user.password == hashedInputPassword) {  
+    if(emailCheck == inputEmail.value && passwordCheck == inputPassword.value) {  
+      
       // Relocates to the front-page (you are logged in)
       window.location = "../login/frontpage.html";
 
@@ -118,7 +124,6 @@ var inputPassword = document.getElementById('password');
 
     // Return false, since we do not have anything more to do
     return false;
-// Trying to change the page when the user logged in, it should say 'my account' instead of 'login'
   }
 };
 
