@@ -59,7 +59,9 @@ var inputPassword = document.getElementById('password');
 var inputUserProfile = localStorage.getItem("users");
 var profileInfo = JSON.parse(inputUserProfile); 
 var emailCheck = profileInfo[0].inputEmail;
-var passwordCheck = profileInfo[0].inputPassword;
+var passwordCheckEncr = profileInfo[0].inputPassword;
+var passwordCheck = window.atob(passwordCheckEncr);
+
 
   // The user is not able to leave the email or password fields blank
   if(inputEmail.value.length == 0 || inputPassword.value.length == 0){
@@ -74,21 +76,21 @@ var passwordCheck = profileInfo[0].inputPassword;
     // Bind user to a variable for easy use (what does this mean)
     var user = users[i];
 
-    // If debug mode is enabled, we console.log the user object from the list (not sure what this means)
-    if(debug == 1){
-      console.log(user);
-    }
+    // // If debug mode is enabled, we console.log the user object from the list (not sure what this means)
+    // if(debug == 1){
+    //   console.log(user);
+    // }
 
-    // We use a try-catch for the hash-password function, since something could go wrong.
-    try {
+    // // We use a try-catch for the hash-password function, since something could go wrong.
+    // try {
 
-      // We try to create a variable with the hashed version of the inputPassword
-      var hashedInputPassword = user.hashPassword(inputPassword.value);
-    } catch(error){
+    //   // We try to create a variable with the hashed version of the inputPassword
+    //   var hashedInputPassword = user.hashPassword(inputPassword.value);
+    // } catch(error){
 
-      // We console log any error that might have been thrown
-      console.log(error);
-    }
+    //   // We console log any error that might have been thrown
+    //   console.log(error);
+    // }
 
     // If username and password matches one from our loop
     if(emailCheck == inputEmail.value && passwordCheck == inputPassword.value) {  

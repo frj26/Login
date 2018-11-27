@@ -22,8 +22,10 @@ function storeUser(event){
     var inputBirthdate = document.getElementById('dayBirthdate').value + '/' + document.getElementById('monthBirthdate').value + '/' + document.getElementById('yearBirthdate').value;
     var inputGender = document.getElementById('gender').value;
     var inputEmail = document.getElementById('email').value;
-    var inputPassword = document.getElementById('password').value;
-    var inputRepeatPassword = document.getElementById('repeatPassword').value;
+    var inputPasswordDec = document.getElementById('password').value;
+    var inputRepeatPasswordDec = document.getElementById('repeatPassword').value;
+    var inputPassword = window.btoa(inputPasswordDec);
+    var inputRepeatPassword = window.btoa(inputRepeatPasswordDec);
 
     //Different of the case of the other variables, we look here not for the value of inputPassword, but for the length in order to make a password check.
     var passwordLength = inputPassword.length;
