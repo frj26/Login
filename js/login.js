@@ -6,28 +6,28 @@ class User {
     this.firstname = firstname;
     this.lastname = lastname;
     this.email = email;
-    this.password = this.hashPassword(password);
+    this.password = password; //this.hashPassword(password)
 }
 
-// Simple function to hash passwords in order for us not to store them in clear text
-hashPassword(rawPassword){
-  var a = 1, c = 0, h, o;
-  if (rawPassword) {
-    a = 0;
-    // Jshint plusplus:false - This option prohibits the use of unary increment and decrement operators (++ , --)
-    // Jshint bitwise:false - This option prohibits the use of bitwise operators such as ^,| and others
-      for (h = rawPassword.length - 1; h >= 0; h--) {
-      o = rawPassword.charCodeAt(h);
-      a = (a<<6&268435455) + o + (o<<14);
-      c = a & 266338304;
-      a = c!==0?a^c>>21:a;
-    }
-  }else {
-    // If the password is not valid, we'll throw and error we're able to catch
-    throw new Error("The password supplied is not valid");
-  }
-  return String(a);
-}
+// // Simple function to hash passwords in order for us not to store them in clear text
+// hashPassword(rawPassword){
+//   var a = 1, c = 0, h, o;
+//   if (rawPassword) {
+//     a = 0;
+//     // Jshint plusplus:false - This option prohibits the use of unary increment and decrement operators (++ , --)
+//     // Jshint bitwise:false - This option prohibits the use of bitwise operators such as ^,| and others
+//       for (h = rawPassword.length - 1; h >= 0; h--) {
+//       o = rawPassword.charCodeAt(h);
+//       a = (a<<6&268435455) + o + (o<<14);
+//       c = a & 266338304;
+//       a = c!==0?a^c>>21:a;
+//     }
+//   }else {
+//     // If the password is not valid, we'll throw and error we're able to catch
+//     throw new Error("The password supplied is not valid");
+//   }
+//   return String(a);
+// }
 }
 
 // We set a debug variable in order to switch on or off debug mode of our small program
@@ -129,12 +129,18 @@ var passwordCheck = profileInfo[0].inputPassword;
 
 // This function is for resetting the password
 function resetPassword() {
+    var emailFilter = /^([a-zA-Z0-9_.-])+@([a-zA-Z0-9-])+.+([a-zA-Z0-9]{2,4})+$/;
     var txt;
     var email = prompt("If you want a new password sent to your email, please enter your email below:"); //this text appears in the pop-up box
+    if(!emailFilter.test(email)){
+      alert("Please enter a valid email address.")
+    }
+    else{    
     if (email == null || email == "") {
-        txt = "No mail was sent"; //if the users doesn't fill in text or closes the pop-up box, a text with 'no mail was sent' will appear
+        txt = "No email was sent"; //if the users doesn't fill in text or closes the pop-up box, a text with 'no mail was sent' will appear
     } else {
         txt = "An email was sent to " + email; //if the user fill in the email, this text will appear + the email the user wrote
     }
     document.getElementById("passwordReset").innerHTML = txt;
+}
 }

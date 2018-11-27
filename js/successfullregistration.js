@@ -11,4 +11,4 @@ window.onload = function loadUser() {
 
     //Once we have all the objects, we tell the system to display the object inputGivenName in the html id givenName
     document.getElementById("givenName").innerHTML = userProfile[0].inputGivenName;
-}
+} 
