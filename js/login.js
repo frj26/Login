@@ -131,18 +131,17 @@ var passwordCheck = window.atob(passwordCheckEncr);
 
 // This function is for resetting the password
 function resetPassword() {
-    var emailFilter = /^([a-zA-Z0-9_.-])+@([a-zA-Z0-9-])+.+([a-zA-Z0-9]{2,4})+$/;
+    var emailFilter = /^([a-zA-Z0-9_.-])+@([a-zA-Z0-9-])+.+([a-zA-Z0-9]{2,4})+$/; //requirements for writing a email
     var txt;
     var email = prompt("If you want a new password sent to your email, please enter your email below:"); //this text appears in the pop-up box
-    if(!emailFilter.test(email)){
-      alert("Please enter a valid email address.")
-    }
-    else{    
-    if (email == null || email == "") {
-        txt = "No email was sent"; //if the users doesn't fill in text or closes the pop-up box, a text with 'no mail was sent' will appear
+    if (email == null || email == ""){
+      txt = "No email was sent"; //if the users doesn't fill in text or closes the pop-up box, a text with 'no mail was sent' will appear
+    } else if (!emailFilter.test(email)) {
+        alert("Please enter a valid email address.")
+        txt = "No email was sent"; //if the user don't meet the email requirements, the text will also say no email was sent
     } else {
         txt = "An email was sent to " + email; //if the user fill in the email, this text will appear + the email the user wrote
     }
     document.getElementById("passwordReset").innerHTML = txt;
 }
-}
+
