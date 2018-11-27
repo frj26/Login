@@ -29,7 +29,7 @@ class Product {
         rossiBoot: new Product("<a href='#'> <img src='pictures/menboots1.jpg' width='250'>", "<a href='#'> ROSSI SDT CHELSEA BOOT", "by New Look", "150$"),
         slhbaxterBoot: new Product("<a href='#'> <img src='pictures/menboots3.jpg' width='250'>","<a href='#'> SLHBAXTER CHELSEA SUEDE BOOT NOOS", "by Selected Homme", "200$"),
         jfwstokeBoot: new Product("<a href='#'> <img src='Pictures/menboots4.jpg' width='250'>", "<a href='#'> JFWSTOKE BOOT NUBUCH HONEY NOOS", "by Jack & Jones", "175$"),
-        slhdavidSneaker: new Product("<a href='SLHDAVID SNEAKER W NOOS.html'> <img src='Pictures/mensneakers1.jpg' width='250'>","<a href='SLHDAVID SNEAKER W NOOS.html'> SLHDAVID SNEAKER W NOOS", "by Selected Homme", "200$"),
+        slhdavidSneaker: new Product("<a href='SLHDAVID SNEAKER W NOOS.html'> <img src='Pictures/mensneakers1.jpg' width='250'>","<a href='SLHDAVID SNEAKER W NOOS.html'> SLHDAVID SNEAKER W NOOS", "by Selected Homme", "100$"),
         gazelleSneaker: new Product("<a href='#'> <img src='pictures/mensneakers2.jpg' width='250'>", "<a href='#'> GAZELLE", "by Adidas Originals", "100$"),
         ml574eggSneaker: new Product ("<a href='#'> <img src='pictures/mensneakers3.jpg' width='250'>", "<a href='#'> ML574EGG", "by New Balance", "150$"),
         xplrSneaker: new Product("<a href='#'> <img src='pictures/mensneakers4.jpg' width='250'>", "<a href='#'> X_PLR", "by Adidas Originals", "125$"),
