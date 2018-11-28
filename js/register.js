@@ -20,13 +20,16 @@ function storeUser(event){
 
     //In the case of this value, we tell the system to englobe all the values in one variable with a specific format.
     var inputBirthdate = document.getElementById('dayBirthdate').value + '/' + document.getElementById('monthBirthdate').value + '/' + document.getElementById('yearBirthdate').value;
-    var inputGender = document.getElementById('gender').value;
     var inputEmail = document.getElementById('email').value;
     var inputPasswordDec = document.getElementById('password').value;
     var inputRepeatPasswordDec = document.getElementById('repeatPassword').value;
     var inputPassword = window.btoa(inputPasswordDec);
     var inputRepeatPassword = window.btoa(inputRepeatPasswordDec);
-
+    //We fixed the radio button only getting "female" by writing a if statement and giving values in case of proving true or false.
+    if (document.getElementById('genderFemale').checked) {
+        var inputGender = 'Female';
+    }
+    else {var inputGender = 'Male';}
     //Different of the case of the other variables, we look here not for the value of inputPassword, but for the length in order to make a password check.
     var passwordLength = inputPassword.length;
 
