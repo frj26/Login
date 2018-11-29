@@ -25,11 +25,13 @@ function storeUser(event){
     var inputRepeatPasswordDec = document.getElementById('repeatPassword').value;
     var inputPassword = window.btoa(inputPasswordDec);
     var inputRepeatPassword = window.btoa(inputRepeatPasswordDec);
+
     //We fixed the radio button only getting "female" by writing a if statement and giving values in case of proving true or false.
     if (document.getElementById('genderFemale').checked) {
         var inputGender = 'Female';
     }
     else {var inputGender = 'Male';}
+    
     //Different of the case of the other variables, we look here not for the value of inputPassword, but for the length in order to make a password check.
     var passwordLength = inputPassword.length;
 
