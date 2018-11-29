@@ -1,7 +1,7 @@
 // We create a shoe class, so we have an easy way to create shoes and further implement features at a later stage
 class Shoe {
 
-// The constructor for our class, which will allow us to create new objects of our class
+// The constructor for our class, which will allow us to create new objects of our class.
     constructor(productname, brandname, price) {
         this.productname = productname;
         this.brandname = brandname;
