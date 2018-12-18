@@ -21,9 +21,15 @@ function storeUser(event){
     //In the case of this value, we tell the system to englobe all the values in one variable with a specific format.
     // WE GET ALL THE INFORMATION FROM THE HTML.
     var inputBirthdate = document.getElementById('dayBirthdate').value + '/' + document.getElementById('monthBirthdate').value + '/' + document.getElementById('yearBirthdate').value;
+    var birthdateLength = inputBirthdate.length; //We added this to fix the birthdate condition. This basically just changes a string into a number.
     var inputEmail = document.getElementById('email').value;
     var inputPasswordDec = document.getElementById('password').value;
     var inputRepeatPasswordDec = document.getElementById('repeatPassword').value;
+    var passwordValidation = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,50}$/ //The password needs at least 8 characters and maximum 50.
+    if(!passwordValidation.test(inputPasswordDec)){
+        alert("Password must contain at least one upper case, one lower case, one special character, and with a minimum length of 8 characters.")
+    }
+    else{
     var inputPassword = window.btoa(inputPasswordDec);
     var inputRepeatPassword = window.btoa(inputRepeatPasswordDec);
 
@@ -31,14 +37,16 @@ function storeUser(event){
     if (document.getElementById('genderFemale').checked) {
         var inputGender = 'Female';
     }
-    else {var inputGender = 'Male';}
+    else if (document.getElementById('genderMale').checked) {
+        var inputGender = 'Male';
+    }
+    else {var inputGender = '';}
     
-    //Different of the case of the other variables, we look here not for the value of inputPassword, but for the length in order to make a password check.
-    var passwordLength = inputPassword.length;
+    // //Different of the case of the other variables, we look here not for the value of inputPassword, but for the length in order to make a password check.
+    // var passwordLength = inputPassword.length;
 
     //Here we add a variable to make a email check. With this, the email will need to have normal characters and numbers, an @, a ". (dot)", and at least two characters to end it.
     var emailFilter = /^([a-zA-Z0-9_.-])+@([a-zA-Z0-9-])+.+([a-zA-Z0-9]{2,4})+$/; //Email validation: it requires any character from a-z 0-9 caps or no caps, an @, an address hotmail a " . " and then at least two to four characters.
-    // var passwordValidation = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,8}$/
 
     //First we tell the system to make a check on the email's format.
     if(!emailFilter.test(inputEmail)){
@@ -46,10 +54,14 @@ function storeUser(event){
     }
     else{
 
-        //If the email check throws false, the system proceed to check the password length.
-        if(passwordLength<8){
-            alert("Password must contain at least 8 characters.")
-        }else {
+    if(birthdateLength<10){
+        alert ("Please fill in your birthdate.")
+    }
+    else{
+        // //If the email check throws false, the system proceed to check the password length.
+        // if(passwordLength<8){
+        //     alert("Password must contain at least 8 characters.")
+        // }else {
             //If also the second check throws false again, now the system check that the filled in password and the repeat password match.
             if(inputPassword !== inputRepeatPassword){
                 alert("Passwords doesn't match.")
@@ -81,5 +93,6 @@ function storeUser(event){
 
     }
 
+}
 }
 );
