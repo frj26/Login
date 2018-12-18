@@ -19,6 +19,7 @@ function storeUser(event){
     var inputFamilyName = document.getElementById('familyName').value;
 
     //In the case of this value, we tell the system to englobe all the values in one variable with a specific format.
+    // WE GET ALL THE INFORMATION FROM THE HTML.
     var inputBirthdate = document.getElementById('dayBirthdate').value + '/' + document.getElementById('monthBirthdate').value + '/' + document.getElementById('yearBirthdate').value;
     var inputEmail = document.getElementById('email').value;
     var inputPasswordDec = document.getElementById('password').value;

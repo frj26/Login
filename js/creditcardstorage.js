@@ -28,7 +28,7 @@ addCreditCard.addEventListener("click",
 
 //When the function starts, we add the "preventDefault" to make sure that it doesn't store the information in the URL.
 function storeCreditCard(e){
-    e.preventDefault()
+    e.preventDefault() // Does that it won't add address to URL, why we can proceed.
 
     //In here we are telling the system to find the values filled in in the html in order to create variables that will be stored.
     var inputCardNumber = document.getElementById("cardNumber").value;
@@ -62,7 +62,7 @@ function storeCreditCard(e){
     //Now we tell the system to push the variable creditCard into the array that we created before.
     userCreditCard.push(creditCard);
 
-    //As local storage cannot store objects, we tell the system to modify it into a string with JSON.stringify.
+    //As local storage cannot store objects, we tell the system to modify it into a string with JSON.stringify. Because encryption only works with strings.
     var usersString = JSON.stringify(userCreditCard);
 
     //Now that we have a string, we tell the system to encrypt the information with window.btoa, this way it will store the information encrypted so that we cannot see the credit card information.

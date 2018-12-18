@@ -42,7 +42,7 @@ addAddress.addEventListener("click",
 
 //This function begins with preventDefault in order to prevent the information of being stored in the URL.
 function addAddress(e){
-    e.preventDefault()
+    e.preventDefault() // Prevents it from add to URL, why we can proceed.
 
     //First we tell the system again to find the information stored in local storage under the key "users", as we wich to save this information together with the added information, and not separately.
     var inputUserProfile = localStorage.getItem("users");
@@ -50,7 +50,7 @@ function addAddress(e){
     //Once we have the string stored in local storage, we tell the system to parse it in order to find the objects stored.
     var userProfile = JSON.parse(inputUserProfile);
 
-    //Now here we tell the system to call the specific values of the objects that we wish to save again.
+    //Now here we tell the system to call the specific values of the objects that we wish to save again. Because the variables local within a function.
     var givenName = userProfile[0].inputGivenName;
     var familyName = userProfile[0].inputFamilyName;
     var email = userProfile[0].inputEmail;
@@ -68,8 +68,8 @@ function addAddress(e){
     //Now we make a var address with all the previous elements in order to make the address in one line.
     var address = document.getElementById("streetNumber").value + ', ' + document.getElementById("postalCode").value + '. ' + document.getElementById("city").value + ', ' + document.getElementById("country").value + '.';
     //As we called the address variables one by one to make a check that everything is filled in, the system now checks that everything is filled in before it proceeds.
-
-    if(streetNumber && postalCode && city && country){
+    
+    if(streetNumber && postalCode && city && country){ // Checking everything is filled in.
 
         //Once everything is filled in, we create a variable with all the objects. Thats why we use {} and not [] or ().
         var user = {givenName, familyName, email, password, birthdate, gender, address};

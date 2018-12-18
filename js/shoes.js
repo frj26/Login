@@ -6,7 +6,7 @@ class Shoe {
         this.productname = productname;
         this.brandname = brandname;
         this.price = price;
-    }
+    }5
 
 // Creating the HTML which can be called in the Javascript
     createHTML() {
