@@ -24,7 +24,7 @@ window.onload = function loadUser() {
     var birthdate = userProfile[0].inputBirthdate;
     var gender = userProfile[0].inputGender;
     var email = userProfile[0].inputEmail;
-    var password = userProfile[0].inputPassword;
+    // var password = userProfile[0].inputPassword;
     
     //Next we are telling the system to display the value of the previous variables in the html in order to personalize it.
     document.getElementById("givenName").innerHTML = givenName;
@@ -32,7 +32,7 @@ window.onload = function loadUser() {
     document.getElementById("birthdate").innerHTML = birthdate;
     document.getElementById("gender").innerHTML = gender;
     document.getElementById("email").innerHTML = email;
-    document.getElementById("password").innerHTML = password;
+    // document.getElementById("password").innerHTML = password; We erased password from the html, but forgot to erase it here......
 
 }
 //Here the second function begins.

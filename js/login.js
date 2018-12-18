@@ -29,15 +29,25 @@ var resultSpan = document.getElementById('loginResult');
 
 // Bind the onClick-function to our own function called authUser. When the user clicks, the function starts
 submit.onclick = function authUser(){
-
+  
+  var inputEmail = document.getElementById('email');
+  var inputPassword = document.getElementById('password');
+  
   if (!localStorage.getItem("users")){
-    alert ("Your account is not registered.");
+    // We loop through all our users and return true if we find a match
+    for (var i = 0; i < users.length; i++) {
+    
+      // Bind user to a variable for easy use (what does this mean)
+      var user = users[i];
+
+      if (user.email == inputEmail.value && user.password == inputPassword.value){
+        window.location = "../login/frontpage.html";
+      }
+    }
   }
   else {
   
 // Bind the two input fields and get the value
-var inputEmail = document.getElementById('email');
-var inputPassword = document.getElementById('password');
 var inputUserProfile = localStorage.getItem("users");
 var profileInfo = JSON.parse(inputUserProfile); 
 var emailCheck = profileInfo[0].inputEmail;
@@ -51,11 +61,6 @@ var passwordCheck = window.atob(passwordCheckEncr);
     resultSpan.innerText = "You need to enter an email and password in order to use the system";
     return false;
   }
-  // We loop through all our users and return true if we find a match
-  for(var i = 0; i < users.length; i++) {
-
-    // Bind user to a variable for easy use (what does this mean)
-    var user = users[i];
 
     // If username and password matches one from our loop
     if(emailCheck == inputEmail.value && passwordCheck == inputPassword.value) {  
@@ -95,7 +100,6 @@ var passwordCheck = window.atob(passwordCheckEncr);
     return false;
     }
   };
-}
 // This function is for resetting the password
 function resetPassword() {
     var emailFilter = /^([a-zA-Z0-9_.-])+@([a-zA-Z0-9-])+.+([a-zA-Z0-9]{2,4})+$/; //requirements for writing a email
